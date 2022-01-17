@@ -1,0 +1,140 @@
+@import '../../styles/imports';
+
+%introBasics {
+	padding: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 100%;
+	@include desktop {
+		padding: 2rem 8rem;
+	}
+}
+
+.stats {
+	display: flex;
+	box-shadow: $shadow-primary;
+	padding: 1rem;
+	justify-content: space-evenly;
+	margin: 3rem auto;
+	width: 100%;
+	gap: 2rem;
+	flex-wrap: wrap;
+	@include tab {
+		width: 90%;
+		border-radius: 30px;
+		padding: 1.5rem 2rem;
+	}
+	.stat {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 0 1rem;
+	}
+}
+
+.sectionone {
+	@extend %introBasics;
+	gap: 1rem;
+	min-height: 70vh;
+
+	@include desktop {
+		flex-direction: row;
+	}
+	.image {
+		display: flex;
+		flex: 1;
+		align-items: center;
+		object-fit: contain;
+		img {
+			height: auto;
+			max-width: 300px;
+			@include tab {
+				width: 400px;
+			}
+		}
+	}
+	.text {
+		flex: 1;
+		padding: 1rem 2rem;
+		text-align: center;
+		@include desktop {
+			text-align: left;
+		}
+		p {
+			margin: 1rem 0;
+		}
+	}
+}
+
+.howItWorks {
+	@extend %introBasics;
+	text-align: center;
+	.container {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		.section {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			padding: 2rem 0;
+			@include tab {
+				flex-direction: row;
+				text-align: left;
+			}
+			.image {
+				display: flex;
+				flex: 1;
+				align-items: center;
+
+				img {
+					max-width: 300px;
+					height: auto;
+					align-self: center;
+					border-radius: 4px;
+				}
+			}
+			.text {
+				flex: 1;
+				margin: 1rem 0;
+				@include tab {
+					padding: 1rem 2rem;
+				}
+				p {
+					margin: 1rem 0;
+				}
+			}
+		}
+	}
+}
+
+.secondSlider {
+	@extend %introBasics;
+	@include desktop {
+		flex-direction: row-reverse;
+	}
+	.image {
+		flex: 1;
+		@include flexCenter;
+		img {
+			max-width: 300px;
+			height: auto;
+			@include tab {
+				width: 300px;
+				height: auto;
+			}
+		}
+	}
+	.text {
+		flex: 2;
+		text-align: center;
+		p {
+			margin: 1rem 0;
+		}
+		@include desktop {
+			text-align: left;
+		}
+	}
+}

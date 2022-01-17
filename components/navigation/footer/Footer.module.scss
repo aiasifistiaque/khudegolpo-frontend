@@ -1,0 +1,79 @@
+@import '../../../styles/imports';
+
+.footer {
+	background-color: #f7f7f7;
+	color: rgba(black, 0.9);
+	display: flex;
+	padding: 5rem 2rem;
+	flex-wrap: wrap;
+	gap: 2rem;
+	flex-direction: column;
+	letter-spacing: 1px;
+	h5 {
+		margin: 1rem 0;
+	}
+	@include desktop {
+		padding: 6rem 8rem;
+		flex-direction: row;
+		padding-bottom: 4rem;
+	}
+	.contact {
+		flex: 1;
+		p {
+			font-size: 0.8rem;
+			margin: 0.25rem 0;
+		}
+	}
+	.items {
+		flex: 1;
+		display: flex;
+		justify-content: space-between;
+		gap: 2rem;
+		flex-wrap: wrap;
+
+		.section {
+			display: flex;
+			flex-direction: column;
+
+			a {
+				@include btn-text-unselect;
+				cursor: pointer;
+				font-size: 0.8rem;
+				margin: 0.5rem 0;
+
+				@include desktop {
+					&:hover {
+						text-decoration-line: underline;
+					}
+				}
+			}
+		}
+	}
+}
+
+.store {
+	display: flex;
+	padding: 0 2rem;
+	justify-content: center;
+
+	margin-bottom: 2rem;
+	@include tab {
+		justify-content: flex-end;
+	}
+	@include desktop {
+		padding: 0 7rem;
+		flex-direction: row;
+	}
+}
+
+.footNote {
+	background-color: #f1f1f1;
+	color: rgba(black, 0.4);
+	padding-top: 2rem;
+	p {
+		font-size: 0.8rem;
+		letter-spacing: 2px;
+		padding: 1rem;
+		text-align: center;
+	}
+}

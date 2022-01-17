@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,OAAO,CAAC;EACP,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;EACtB,OAAO,EAAE,IAAI;EACb,IAAI,EAAE,CAAC;EACP,eAAe,EAAE,aAAa;EAC9B,gBAAgB,EAAE,OAAO;CAIzB;;AEoBA,MAAM,EAAE,SAAS,EAAE,MAAM;EF9B1B,AAAA,OAAO,CAAC;IAQN,OAAO,EAAE,SAAS;GAEnB",
+    "sources": [
+        "BookLayout.module.scss",
+        "../../../styles/_imports.scss",
+        "../../../styles/utilities/_mixin.scss",
+        "../../../styles/utilities/_partials.scss"
+    ],
+    "names": [],
+    "file": "BookLayout.module.css"
+}

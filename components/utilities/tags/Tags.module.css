@@ -1,0 +1,30 @@
+.greenTag {
+  background-color: #00ff99;
+  padding: 0 0.5rem;
+  border-radius: 4px;
+  margin: 0.25rem auto;
+}
+
+.greenTag p {
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: black;
+  letter-spacing: 0.25px;
+}
+
+.redTag {
+  background-color: #ff3152;
+  padding: 0 0.5rem;
+  border-radius: 4px;
+  margin: 0.25rem auto;
+}
+
+.redTag p {
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: white;
+  letter-spacing: 0.25px;
+}
+/*# sourceMappingURL=Tags.module.css.map */

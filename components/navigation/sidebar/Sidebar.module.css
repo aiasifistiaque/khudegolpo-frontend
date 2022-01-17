@@ -1,0 +1,79 @@
+.sidebar a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 100%;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding: 0.25rem 20px;
+  white-space: nowrap;
+  cursor: pointer;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 500;
+  font-size: 0.8rem;
+  z-index: 7;
+}
+
+.sidebar a:hover {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+@media (min-width: 1008px) {
+  .sidebar a:hover {
+    background-color: rgba(0, 91, 255, 0.1);
+  }
+}
+
+.sidebar a:active {
+  background-color: rgba(0, 73, 204, 0.1);
+}
+
+.sidebar {
+  padding-top: 4rem;
+  padding-bottom: 5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  height: 100vh;
+  width: 250px;
+  background-color: white;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  z-index: 9;
+  top: 0;
+  left: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  max-height: 100vh;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  padding-bottom: 100px;
+  border-right: 2px solid #f2f2f2;
+}
+
+.sidebar h5 {
+  padding: 10px 20px;
+  border-bottom: 2px solid rgba(0, 91, 255, 0.1);
+  width: 100%;
+  color: #b3b3b3;
+  margin-top: 0em;
+}
+/*# sourceMappingURL=Sidebar.module.css.map */

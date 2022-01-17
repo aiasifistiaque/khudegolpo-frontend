@@ -1,0 +1,274 @@
+.info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 1008px) {
+  .info {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.info .cover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 240px;
+  margin: 0 auto;
+}
+
+.info .cover .coverText {
+  text-align: center;
+  margin: 1rem;
+}
+
+.info .cover .coverText a {
+  font-size: 1.1rem;
+}
+
+@media (min-width: 1008px) {
+  .info .cover .coverText a {
+    width: 100%;
+  }
+  .info .cover .coverText a:hover {
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+  }
+}
+
+.info .cover .coverText p {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.info .cover .coverText .status {
+  background-color: teal;
+  color: white;
+  padding: 0.25rem;
+  border-radius: 4px;
+  margin-top: 0.5rem;
+}
+
+.info .cover .coverText .status p {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+}
+
+.info .cover img {
+  width: 225px;
+  height: auto;
+  border-radius: 4px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  cursor: pointer;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.info .main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 5;
+      -ms-flex: 5;
+          flex: 5;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.info .main .details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+
+.info .main .details p {
+  font-size: 12px;
+}
+
+.info .main .appOnly {
+  text-align: center;
+  margin: 4rem 0;
+}
+
+.info .main .chapter {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  letter-spacing: 0.5px;
+}
+
+.info .main .chapter p {
+  margin-bottom: 1.5rem;
+  line-height: 30px;
+}
+
+.info .ad {
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.info .ad img {
+  width: 200px;
+  height: auto;
+  border-radius: 4px;
+}
+
+@media (min-width: 1008px) {
+  .info .ad {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 3;
+        -ms-flex: 3;
+            flex: 3;
+  }
+}
+
+.author {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.author img {
+  border-radius: 300px;
+  width: 32px;
+  height: 32px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.author .nameFollow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.5rem;
+}
+
+.description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+.description .descriptionTags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0.5rem 0 2rem 0;
+  gap: 0.25rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.description .descriptionTags .bookType, .description .descriptionTags .genre, .description .descriptionTags .adult {
+  font-size: 0.7rem;
+  background-color: rgba(0, 0, 0, 0.075);
+  border-radius: 30px;
+  padding: 4px 1rem;
+  font-weight: 500;
+  text-align: center;
+}
+
+.description .descriptionTags .genre {
+  background-color: teal;
+  color: white;
+  font-size: 0.8rem;
+}
+
+.description .descriptionTags .adult {
+  background-color: rgba(255, 49, 82, 0.2);
+  border: 0.2px solid rgba(255, 49, 82, 0.3);
+  color: crimson;
+}
+
+.description .bookDescription {
+  letter-spacing: 0.1px;
+}
+
+.description .bookDescription p {
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  line-height: 1.575rem;
+}
+
+.description .tagContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.description .tags {
+  background-color: #cfcfcf;
+  padding: 0.1rem 0.75rem;
+  border-radius: 30px;
+}
+
+.description .tags p {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.description h6 {
+  margin: 0.5rem 0 0 0;
+}
+/*# sourceMappingURL=BookInfo.module.css.map */

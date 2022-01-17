@@ -1,0 +1,133 @@
+@import '../../../styles/imports';
+.caption {
+	display: flex;
+	width: 100%;
+
+	justify-content: center;
+	@include tab {
+		justify-content: flex-start;
+	}
+	p {
+		font-size: 0.8rem;
+		font-weight: 500;
+		margin: 0;
+		padding: 0;
+		line-height: 0.8rem * 1.5;
+		text-align: center;
+		@include tab {
+			text-align: left;
+		}
+	}
+	a {
+		color: $color-primary;
+		cursor: pointer;
+		&:hover {
+			text-decoration-line: underline;
+		}
+	}
+}
+
+.subHeading {
+	display: flex;
+	width: 100%;
+
+	p {
+		font-size: 0.8rem;
+		font-weight: 600;
+		margin: 0;
+		padding: 0;
+		line-height: 0.8rem * 1.5;
+		color: lighten(black, 50%);
+	}
+}
+
+.blueText {
+	color: $color-primary;
+	font-size: 0.9rem;
+}
+
+.textCaption {
+	display: flex;
+	width: 100%;
+
+	justify-content: left;
+	@include tab {
+		justify-content: flex-start;
+	}
+	p {
+		font-size: 12px;
+		font-weight: 500;
+		margin: 0;
+		padding: 0;
+		line-height: 0.8rem * 1.5;
+		text-align: center;
+		@include tab {
+			text-align: left;
+		}
+	}
+	a {
+		color: $color-primary;
+		cursor: pointer;
+		&:hover {
+			text-decoration-line: underline;
+		}
+	}
+}
+
+.errorText {
+	@include flexCenter();
+	padding: 1rem 2rem;
+	background-color: rgba($color-danger, 0.1);
+	border-radius: 4px;
+	color: $color-danger;
+	width: 100%;
+	margin: 1rem 0;
+	p {
+		font-size: 0.9rem;
+		font-weight: 500;
+		margin: 0;
+		padding: 0;
+		line-height: 0.8rem * 1.5;
+		text-align: center;
+		@include tab {
+			text-align: left;
+		}
+	}
+}
+
+.successText {
+	@include flexCenter();
+	padding: 1rem 2rem;
+	background-color: rgba(teal, 0.1);
+	border-radius: 4px;
+	color: teal;
+	width: 100%;
+	margin: 1rem 0;
+	p {
+		font-size: 0.9rem;
+		font-weight: 500;
+		margin: 0;
+		padding: 0;
+		line-height: 0.8rem * 1.5;
+		text-align: center;
+		@include tab {
+			text-align: left;
+		}
+	}
+}
+
+.pageTitle {
+	display: flex;
+	width: 100%;
+	padding: 1rem 0;
+	text-transform: capitalize;
+}
+
+.date {
+	color: lighten(black, 50%);
+	p {
+		$font-size: 12px;
+		font-size: $font-size;
+		line-height: 1.25rem;
+	}
+}

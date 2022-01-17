@@ -1,0 +1,187 @@
+@import '../../../styles/imports';
+
+.info {
+	display: flex;
+	flex-direction: column;
+
+	@include desktop {
+		flex-direction: row;
+	}
+	.cover {
+		display: flex;
+		align-items: center;
+		flex: 3;
+		flex-direction: column;
+		justify-content: flex-start;
+		width: 240px;
+		margin: 0 auto;
+		.coverText {
+			text-align: center;
+			margin: 1rem;
+			a {
+				font-size: 1.1rem;
+				@include desktop {
+					width: 100%;
+					&:hover {
+						text-decoration-line: underline;
+					}
+				}
+			}
+			p {
+				font-weight: 600;
+				font-size: 0.9rem;
+			}
+			.status {
+				background-color: teal;
+				color: white;
+				padding: 0.25rem;
+				border-radius: 4px;
+				margin-top: 0.5rem;
+				p {
+					font-size: 0.7rem;
+					text-transform: uppercase;
+				}
+			}
+		}
+
+		img {
+			width: 225px;
+			height: auto;
+			border-radius: 4px;
+			object-fit: contain;
+			//margin-bottom: -0.25rem;
+			cursor: pointer;
+			border-bottom-right-radius: 0;
+			border-bottom-left-radius: 0;
+		}
+	}
+	.main {
+		display: flex;
+		flex: 5;
+		align-items: center;
+		justify-content: center;
+		padding: 1rem;
+		flex-direction: column;
+
+		.details {
+			display: flex;
+			gap: 1rem;
+
+			p {
+				font-size: 12px;
+			}
+		}
+		.appOnly {
+			text-align: center;
+			margin: 4rem 0;
+		}
+
+		.chapter {
+			@include btn-text-unselect;
+			letter-spacing: 0.5px;
+
+			p {
+				margin-bottom: 1.5rem;
+				line-height: 30px;
+			}
+		}
+	}
+	.ad {
+		display: none;
+		justify-content: center;
+		align-items: flex-start;
+
+		img {
+			width: 200px;
+			height: auto;
+			border-radius: 4px;
+		}
+		@include desktop {
+			display: flex;
+			flex: 3;
+		}
+	}
+}
+
+.author {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
+	padding: 0.5rem;
+	margin-bottom: 1rem;
+
+	img {
+		border-radius: 300px;
+		width: 32px;
+		height: 32px;
+		object-fit: cover;
+	}
+	.nameFollow {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+	}
+}
+
+.description {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	.descriptionTags {
+		display: flex;
+		margin: 0.5rem 0 2rem 0;
+		gap: 0.25rem;
+		flex-wrap: wrap;
+		%type {
+			font-size: 0.7rem;
+			background-color: rgba(black, 0.075);
+			border-radius: 30px;
+			padding: 4px 1rem;
+			font-weight: 500;
+			text-align: center;
+		}
+		.bookType {
+			@extend %type;
+		}
+		.genre {
+			@extend %type;
+			background-color: teal;
+			color: white;
+			font-size: 0.8rem;
+		}
+		.adult {
+			@extend %type;
+			background-color: rgba($color-danger, 0.2);
+			border: 0.2px solid rgba($color-danger, 0.3);
+			color: crimson;
+		}
+	}
+	.bookDescription {
+		letter-spacing: 0.1px;
+		p {
+			margin-bottom: 1rem;
+			font-size: 0.9rem;
+			line-height: 0.9rem * 1.75;
+		}
+	}
+
+	.tagContainer {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.5rem;
+	}
+	.tags {
+		background-color: #cfcfcf;
+		padding: 0.1rem 0.75rem;
+		border-radius: 30px;
+		p {
+			font-size: 12px;
+			font-weight: 600;
+		}
+	}
+
+	h6 {
+		margin: 0.5rem 0 0 0;
+	}
+}

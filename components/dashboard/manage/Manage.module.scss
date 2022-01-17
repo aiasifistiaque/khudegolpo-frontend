@@ -1,0 +1,11 @@
+@import '../../../styles/imports';
+
+.container {
+	@extend %dash-container;
+	.box {
+		margin: 1rem 0;
+		@include desktop {
+			width: 70%;
+		}
+	}
+}

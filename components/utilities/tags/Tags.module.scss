@@ -1,0 +1,23 @@
+@import '../../../styles/imports';
+
+@mixin tagMixin($color: $color-success, $txt: $color-black) {
+	background-color: $color;
+	padding: 0 0.5rem;
+	border-radius: 4px;
+	margin: 0.25rem auto;
+	p {
+		font-size: 0.6rem;
+		text-transform: uppercase;
+		font-weight: 600;
+		color: $txt;
+		letter-spacing: 0.25px;
+	}
+}
+
+.greenTag {
+	@include tagMixin();
+}
+
+.redTag {
+	@include tagMixin($color-danger, white);
+}

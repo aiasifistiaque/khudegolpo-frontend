@@ -1,0 +1,51 @@
+@import '../../../styles/imports';
+
+%inputPartial {
+	input[type='number']::-webkit-inner-spin-button,
+	input[type='number']::-webkit-outer-spin-button {
+		-webkit-appearance: none;
+		margin: 0;
+	}
+
+	input,
+	textarea,
+	select {
+		height: 42px;
+		width: 100%;
+		border: none;
+		padding: 0 1em;
+		border-radius: 30px;
+		background-color: white;
+		border: 2px solid $color-border;
+		outline: none;
+
+		&:focus {
+			border: 2px solid $color-primary;
+			outline: none;
+		}
+	}
+
+	textarea {
+		padding: 1em;
+	}
+}
+
+.cInput {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 1.5em;
+	width: 100%;
+	//max-width: 300px;
+
+	label {
+		font-family: Poppins;
+		font-size: 12px;
+		margin-bottom: 0.3em;
+		font-weight: 500;
+		@include btn-text-unselect;
+	}
+	@extend %inputPartial;
+	textarea {
+		min-height: 200px;
+	}
+}

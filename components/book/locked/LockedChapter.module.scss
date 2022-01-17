@@ -1,0 +1,126 @@
+@import '../../../styles/imports';
+
+.container {
+	display: flex;
+	flex-direction: column;
+	padding: 2rem;
+	justify-content: center;
+	//flex: 1;
+	//width: 100%;
+	margin: 1rem auto;
+
+	@include desktop {
+		padding: 1rem 4rem;
+	}
+	.title {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+
+		a {
+			display: inline-block;
+			&:hover {
+				text-decoration-line: underline;
+			}
+		}
+	}
+	.main {
+		@include flexCenter(column);
+		.info {
+			@include flexCenter(column);
+			margin: 2rem 0;
+			.image {
+				img {
+					max-width: 300px;
+					height: auto;
+					border-radius: 10px;
+				}
+			}
+			.text {
+				@include flexCenter(column);
+				text-align: center;
+
+				.details {
+					@include flexCenter;
+					gap: 2rem;
+					margin-bottom: 0.5rem;
+				}
+			}
+		}
+		.buy {
+			text-align: center;
+
+			@extend %comment-container;
+			@include flexCenter(column);
+			gap: 0.5rem;
+			padding: 2rem 1.5rem;
+			@include desktop {
+				padding: 2rem 4rem;
+			}
+
+			.lockIcon {
+				border: 0.5px solid rgba($color-primary, 0.2);
+				padding: 1rem;
+				@include flexCenter(column);
+				border-radius: 100px;
+				margin-top: -4rem;
+				background-color: white;
+				margin-bottom: 1rem;
+
+				img {
+					width: 24px;
+					height: 24px;
+					object-fit: contain;
+				}
+			}
+
+			.unlock {
+				@include flexCenter;
+				margin: 0.5rem 0;
+				@include btn-text-unselect;
+				cursor: pointer;
+				background-color: white;
+				transition: 0.2s;
+
+				&:hover {
+					@include desktop {
+						.price {
+							background-color: darken(white, 5%);
+						}
+						.open {
+							background-color: darken($color-primary, 10%);
+						}
+					}
+				}
+
+				.price {
+					padding: 0.5rem 1rem;
+					border: 1px solid $color-primary;
+					border-radius: 30px;
+					color: $color-primary;
+					margin: 0;
+					z-index: 2;
+					background-color: white;
+					@include desktop {
+					}
+				}
+				.open {
+					padding: 0.5rem 2.5rem;
+					border: 1px solid $color-primary;
+					border-radius: 30px;
+					color: white;
+					margin: 0;
+					background-color: $color-primary;
+					margin-left: -2rem;
+					z-index: 0;
+				}
+			}
+		}
+	}
+}
+
+.alertInfo {
+	@include flexCenter(column);
+	text-align: center;
+	margin-bottom: 1rem;
+}

@@ -1,0 +1,50 @@
+.cInput input,
+.cInput textarea,
+.cInput select {
+  height: 30px;
+  border: none;
+  padding: 0 0.25rem;
+  border-radius: 4px;
+  background-color: whitesmoke;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+.cInput input:focus,
+.cInput textarea:focus,
+.cInput select:focus {
+  border: 1px solid rgba(0, 91, 255, 0.8);
+  outline: none;
+}
+
+
+.cInput textarea {
+  padding: 1em;
+}
+
+.cInput {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 300px;
+}
+
+.cInput label {
+  font-family: Poppins;
+  font-size: 12px;
+  margin-bottom: 0.3em;
+  font-weight: 500;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.cInput textarea {
+  min-height: 200px;
+}
+/*# sourceMappingURL=AdminInput.module.css.map */

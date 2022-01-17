@@ -1,0 +1,201 @@
+@import '../../styles/imports';
+
+%homeSection {
+	display: flex;
+	flex-direction: column;
+	padding: 1.5rem;
+	box-sizing: border-box;
+	width: 100%;
+	@include desktop {
+		//margin: 3rem 4rem;
+		padding: 3rem 4rem;
+	}
+}
+
+.homelist {
+	@extend %homeSection;
+	background-color: white;
+
+	.books {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+		width: 100%;
+		margin: 1rem 0 2rem 0;
+		gap: 0.5rem;
+		@include desktop {
+			flex-wrap: nowrap;
+			justify-content: stretch;
+			margin-bottom: 3rem;
+		}
+
+		.sectionBooks {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			cursor: pointer;
+			transition: 0.3s;
+			width: 120px;
+			text-align: center;
+			@include phone {
+				width: 150px;
+			}
+
+			@include desktop {
+				width: 100%;
+				&:hover {
+					transform: scale(1.05);
+				}
+			}
+
+			img {
+				width: 100%;
+				height: 180px;
+				@include phone {
+					height: 240px;
+				}
+				@include desktop {
+					height: 300px;
+					width: 100%;
+				}
+
+				object-fit: cover;
+				margin: 0.5rem;
+				border-radius: 4px;
+			}
+		}
+	}
+}
+
+.homeBookDetail {
+	@extend %homeSection;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding: 2rem 0;
+
+	@include desktop {
+		width: 70%;
+		flex-direction: row;
+		align-items: center;
+	}
+	.tagContainer {
+		display: flex;
+		gap: 0.25rem;
+		flex-wrap: wrap;
+		align-items: center;
+		margin: 0.5rem 0;
+
+		.more {
+			color: $color-danger;
+			margin: 0 0.25rem;
+			font-size: 0.9rem;
+			font-weight: 600;
+		}
+	}
+	.mainText {
+		margin: 1rem 0;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		display: -webkit-box;
+		-webkit-line-clamp: 5; /* number of lines to show */
+		line-clamp: 5;
+		-webkit-box-orient: vertical;
+	}
+	a {
+		font-size: 1.5rem;
+		font-weight: 600;
+		@include tab {
+			font-size: 2rem;
+		}
+	}
+
+	img {
+		width: 90vw;
+		height: 400px;
+		margin: 0 1rem;
+		padding: 0;
+		object-fit: cover;
+		border-radius: 4px;
+		cursor: pointer;
+		@include tab {
+			width: 200px;
+			height: 300px;
+		}
+	}
+
+	align-self: center;
+
+	.bookDetails {
+		padding: 1rem 1.5rem;
+		gap: 10px;
+		width: 100%;
+
+		@include desktop {
+			align-self: flex-end;
+			padding: 0 1.5rem;
+		}
+	}
+}
+
+.homeCover {
+	background-color: white;
+	border-radius: 30px;
+	@extend %homeSection;
+	img {
+		width: 100%;
+		height: 300px;
+		object-fit: cover;
+		border-radius: 30px;
+	}
+}
+
+%hero-partial {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	//background-position: center;
+	//background-size: cover;
+	background-color: white;
+	height: 30vh;
+	border-radius: 30px;
+	margin: 3rem 1.5rem;
+
+	flex-direction: column;
+	@include desktop {
+		margin: 3rem 4rem;
+		height: 40vh;
+	}
+}
+
+.heroContainer {
+	@extend %hero-partial;
+	img {
+		width: 100%;
+		height: 30vh;
+		object-fit: cover;
+		border-radius: 30px;
+		cursor: pointer;
+		@include desktop {
+			height: 40vh;
+		}
+	}
+	//background-image: url('../../public/slider1.jpg');
+}
+
+.heroOne {
+	@extend %hero-partial;
+	//background-image: url('../../public/slider2.jpeg');
+}
+
+.heroTwo {
+	@extend %hero-partial;
+	//background-image: url('../../public/slider3.jpeg');
+}
+
+.gap {
+	padding-top: 40vh;
+	@include desktop {
+		padding-top: 55vh;
+	}
+}

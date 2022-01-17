@@ -1,0 +1,123 @@
+@import '../../styles/imports';
+
+.profileContainer {
+	display: flex;
+	padding: 1.5rem;
+	width: 100%;
+	flex: 1;
+	background-color: white;
+	padding: 3rem 1.5rem;
+	flex-direction: column;
+
+	@include desktop {
+		margin: 3rem 8rem;
+		border-radius: 10px;
+		padding: 4rem;
+
+		box-shadow: $shadow-primary;
+	}
+}
+
+.container {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+
+	.imageItems {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: flex-start;
+		width: 100%;
+		margin-bottom: 0.5rem;
+
+		@include desktop {
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		.imageContainer {
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			align-items: center;
+			@include desktop {
+				align-items: flex-start;
+				width: 40%;
+			}
+
+			img {
+				$size: 200px;
+				object-fit: cover;
+				border-radius: 300px;
+				margin-bottom: 0.5rem;
+				height: 100px;
+				width: 100px;
+				@include tab {
+					height: 250px;
+					width: 220px;
+					margin-bottom: 1rem;
+				}
+				@include desktop {
+					height: 240px;
+					width: 240px;
+				}
+
+				height: $size;
+				width: $size;
+			}
+		}
+		.detailContainer {
+			width: 100%;
+			@include desktop {
+				margin: 0 3rem;
+			}
+			.username {
+				text-align: center;
+				font-size: 16px;
+				@include desktop {
+					text-align: left;
+					font-size: 24px;
+				}
+			}
+			.items {
+				display: flex;
+				width: 100%;
+				justify-content: space-evenly;
+				margin: 1rem 0;
+				@include desktop {
+					//flex: 1;
+					justify-content: flex-start;
+				}
+				.item {
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+					//margin: 0 3rem;
+
+					@include desktop {
+						margin-right: 3rem;
+						flex-direction: row;
+						h6 {
+							margin-right: 0.25rem;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.followContainer {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	@include desktop {
+		flex-direction: row;
+		align-items: center;
+		gap: 1rem;
+	}
+}

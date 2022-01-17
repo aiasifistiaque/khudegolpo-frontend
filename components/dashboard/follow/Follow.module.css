@@ -1,0 +1,143 @@
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  padding: 2rem;
+  margin: 0.5rem 0 1rem 0;
+  background-color: white;
+  width: 100%;
+  min-width: 250px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: left;
+}
+
+@media (min-width: 1008px) {
+  .container {
+    -webkit-box-shadow: 0 22px 40px rgba(0, 91, 255, 0.12);
+            box-shadow: 0 22px 40px rgba(0, 91, 255, 0.12);
+    margin: 2rem 4rem 2rem 0.5rem;
+    border-radius: 10px;
+    padding: 2rem 4rem;
+  }
+}
+
+.container .followers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 2rem 0;
+}
+
+.container .followers .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0.5rem 0;
+}
+
+.container .followers .item .user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5rem;
+}
+
+.container .followers .item .user .image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .followers .item .user .image img {
+  width: 60px;
+  height: 60px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 60px;
+}
+
+@media (min-width: 1008px) {
+  .container .followers .item .user .image img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.container .followers .item .user .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: left;
+}
+
+.container .followers .item .user .text .name {
+  cursor: pointer;
+}
+
+@media (min-width: 1008px) {
+  .container .followers .item .user .text {
+    -webkit-box-flex: 0.4;
+        -ms-flex: 0.4;
+            flex: 0.4;
+  }
+  .container .followers .item .user .text .name:hover {
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+  }
+}
+
+.container .followers .item .user .text .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.1rem;
+}
+
+@media (min-width: 1008px) {
+  .container .followers .item .user .text .info {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 0.5rem;
+  }
+}
+/*# sourceMappingURL=Follow.module.css.map */

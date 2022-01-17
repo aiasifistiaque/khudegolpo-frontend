@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400,400i,500,600,700,800,800i,900i&display=swap");
+.searchPanel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  height: 60vh;
+  -webkit-transition: visibility 1s linear;
+  transition: visibility 1s linear;
+  padding: 10vh 5% 0 5%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  z-index: 7;
+  visibility: visible;
+  font-family: 'Poppins', sans-serif;
+}
+
+@media (min-width: 640px) {
+  .searchPanel {
+    height: 60vh;
+  }
+}
+
+@media (min-width: 1008px) {
+  .searchPanel {
+    height: 70vh;
+  }
+}
+
+.searchPanel .closeIcon {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  height: 40px;
+  width: 40px;
+  border-radius: 500px;
+  cursor: pointer;
+  margin-top: 0.5em;
+}
+
+@media (min-width: 640px) {
+  .searchPanel .closeIcon {
+    margin: 1em;
+    height: 50px;
+    width: 50px;
+  }
+}
+
+@media (min-width: 1008px) {
+  .searchPanel .closeIcon:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}
+
+.searchPanel .closeIcon:active {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.searchPanel .inputContainer {
+  font-family: 'Poppins', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 1em 0;
+  margin-bottom: 0;
+}
+
+.panelExpand {
+  height: 80vh;
+}
+
+.spCardContainer {
+  font-family: 'Poppins', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  overflow-y: scroll;
+}
+
+@media (min-width: 640px) {
+  .spCardContainer {
+    width: 80%;
+  }
+}
+
+.spCardContainer .spCard {
+  font-family: 'Poppins', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.5em 1em;
+  border-bottom: 3px solid whitesmoke;
+  cursor: pointer;
+}
+
+.spCardContainer .spCard:hover {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+@media (min-width: 1008px) {
+  .spCardContainer .spCard:hover {
+    background-color: whitesmoke;
+  }
+  .spCardContainer .spCard:hover .cardText h4 {
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+  }
+}
+
+.spCardContainer .spCard .cardText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 0.5em;
+}
+
+.spCardContainer .spCard .cardText h4 {
+  margin-bottom: 0.2em;
+}
+
+.spCardContainer .spCard .cardText p {
+  font-size: 0.7em;
+}
+
+@media (min-width: 640px) {
+  .spCardContainer .spCard .cardText p {
+    font-size: 0.8em;
+  }
+}
+
+@media (min-width: 1008px) {
+  .spCardContainer .spCard .cardText p {
+    font-size: 0.9em;
+  }
+}
+
+.searchHidden {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  height: 60vh;
+  -webkit-transition: visibility 1s linear;
+  transition: visibility 1s linear;
+  padding: 10vh 5% 0 5%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  z-index: 7;
+  visibility: hidden;
+  display: none;
+}
+
+@media (min-width: 640px) {
+  .searchHidden {
+    height: 60vh;
+  }
+}
+
+@media (min-width: 1008px) {
+  .searchHidden {
+    height: 70vh;
+  }
+}
+
+.searchLoading {
+  margin: 2em 0;
+}
+
+.searchLoading h3 {
+  font-family: 'Poppins', sans-serif;
+}
+/*# sourceMappingURL=Search.module.css.map */

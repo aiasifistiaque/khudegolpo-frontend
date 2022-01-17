@@ -1,0 +1,26 @@
+@import '../../../styles/imports';
+
+.recommendations {
+	display: flex;
+	flex-direction: column;
+	padding: 4rem 0;
+	.cardContainer {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1rem;
+		margin: 1rem 0;
+		justify-content: space-evenly;
+
+		img {
+			width: 150px;
+			height: 250px;
+			cursor: pointer;
+			object-fit: cover;
+			border-radius: 4px;
+			@include desktop {
+				width: 180px;
+				height: 280px;
+			}
+		}
+	}
+}

@@ -1,0 +1,49 @@
+@import '../../../styles/imports';
+
+.login {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	flex-direction: column;
+	width: 100%;
+	margin: 0 1.5rem;
+	.forgot {
+		color: dodgerblue;
+		font-size: 12px;
+		font-weight: 500;
+		margin: -16px 0 4px 0;
+		@include tab {
+			align-self: flex-start;
+		}
+	}
+	width: 100%;
+
+	@include tab {
+		margin: 0 auto;
+		max-width: 420px;
+	}
+	@include desktop {
+		margin: 0 auto;
+	}
+	@include xlarge {
+		margin: 0 auto;
+	}
+}
+.newUser {
+	display: flex;
+	margin: 1.5rem 0;
+	font-weight: 400;
+	width: 100%;
+	justify-content: center;
+
+	@include tab {
+		justify-content: flex-start;
+	}
+	a {
+		margin-left: 0.3rem;
+		color: $color-danger;
+		text-transform: capitalize;
+		line-height: 24px;
+	}
+}

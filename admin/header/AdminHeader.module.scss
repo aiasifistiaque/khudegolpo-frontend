@@ -1,0 +1,69 @@
+@import '../../styles/imports';
+.header {
+	width: 100%;
+	height: 4rem;
+	background-color: $color-primary;
+	display: flex;
+	align-items: center;
+	padding: 0 16px;
+	color: white;
+	justify-content: space-between;
+	position: fixed;
+	z-index: 19;
+	.name {
+		display: flex;
+		flex: 1;
+
+		h5 {
+			cursor: pointer;
+			letter-spacing: -2px;
+		}
+		.menuIcon {
+			@include flexCenter();
+			border-radius: 4px;
+			margin-right: 1rem;
+			padding: 2px 8px;
+			cursor: pointer;
+			@include desktop {
+				&:hover {
+					background-color: rgba(white, 0.1);
+				}
+			}
+			img {
+				width: 24px;
+				height: 24px;
+				object-fit: contain;
+			}
+		}
+	}
+	.options {
+		flex: 1;
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		gap: 1rem;
+		.option {
+			display: flex;
+			padding: 0.5rem;
+			background-color: rgba(white, 0.1);
+			border-radius: 100px;
+			cursor: pointer;
+			@include desktop {
+				transition: 0.2s;
+				&:hover {
+					background-color: rgba(white, 0.4);
+				}
+			}
+
+			img {
+				width: 20px;
+				height: 20px;
+				object-fit: contain;
+			}
+		}
+	}
+
+	@include desktop {
+		padding: 0 64px;
+	}
+}

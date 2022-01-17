@@ -1,0 +1,152 @@
+@import '../styles/imports';
+
+.container {
+	padding: 5rem 24px;
+	background-color: #f7f7f7;
+	flex: 1;
+	min-height: 100vh;
+	@include desktop {
+		padding: 5rem 4rem;
+	}
+}
+
+.pagebuttoncontainer {
+	display: flex;
+
+	.pageButton {
+		cursor: pointer;
+		background-color: rgba($color-primary, 0.15);
+		padding: 2px 12px;
+		margin-right: 4px;
+		border-radius: 4px;
+		transition: 0.3s;
+		&:hover {
+			background-color: rgba($color-primary, 0.25);
+		}
+		p {
+			font-size: 12px;
+			font-weight: 600;
+			color: $color-primary;
+		}
+	}
+	.pageButtonSelected {
+		background-color: rgba($color-primary, 0.5);
+		padding: 2px 12px;
+		margin-right: 4px;
+		border-radius: 4px;
+		cursor: default;
+
+		p {
+			font-size: 12px;
+			font-weight: 600;
+			color: $color-primary;
+		}
+	}
+	.pageButtonText {
+		padding: 2px 12px;
+		margin-right: 4px;
+
+		p {
+			font-size: 12px;
+			font-weight: 600;
+			color: $color-primary;
+		}
+	}
+}
+
+$borderColor: rgba(black, 0.075);
+
+.itemContainer {
+	border: 0.5px solid $borderColor;
+	border-radius: 4;
+	margin: 16px 0;
+	overflow: auto;
+	flex-wrap: nowrap;
+	background-color: white;
+
+	.items {
+		display: flex;
+		border-radius: 4;
+
+		justify-content: space-between;
+		border-right-width: 0;
+		border-left-width: 0;
+		flex-wrap: nowrap;
+	}
+
+	.item {
+		flex: 1;
+
+		text-align: left;
+		min-width: 200px;
+		padding: 16px 32px;
+		border: 0.25px solid $borderColor;
+		border-right-width: 0;
+		border-left-width: 0;
+
+		p,
+		h6 {
+			font-size: 14px;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			overflow: hidden;
+		}
+		a {
+			font-size: 14px;
+			color: dodgerblue;
+			cursor: pointer;
+		}
+	}
+}
+
+.loader {
+	border: 6px solid #f1f1f1; /* Light grey */
+	border-top: 8px solid black; /* Blue */
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.detailLayout {
+	flex: 1;
+}
+
+.detailContainer {
+	padding: 2rem;
+	background-color: white;
+	border-radius: 10px;
+	flex-wrap: nowrap;
+	background-color: white;
+	overflow: auto;
+	margin: 2rem 0;
+	h5 {
+		margin-bottom: 1rem;
+	}
+}
+
+.detailItems {
+	display: flex;
+
+	.detailItem {
+		border: 1px solid rgba(black, 0.075);
+		flex: 1;
+		min-width: 200px;
+		padding: 0.5rem 1rem;
+		p {
+			font-size: 14px;
+		}
+		a {
+			color: dodgerblue;
+		}
+	}
+}

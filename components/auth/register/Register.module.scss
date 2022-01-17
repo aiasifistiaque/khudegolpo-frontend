@@ -1,0 +1,19 @@
+@import '../../../styles/imports';
+
+.register {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	flex-direction: column;
+	width: 100%;
+	margin: 1rem 2rem;
+
+	@include tab {
+		margin: 2rem 25%;
+	}
+	@include desktop {
+		margin: 2rem 35%;
+	}
+	margin-bottom: 4rem;
+}

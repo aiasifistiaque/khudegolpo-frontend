@@ -1,0 +1,231 @@
+@import '../../../styles/imports';
+
+%buttonUtil {
+	display: inline-flex;
+	cursor: pointer;
+	@include btn-text-unselect;
+	margin: 0.25rem;
+	transition: 0.2s;
+
+	p {
+		font-size: 14px;
+		letter-spacing: 0.5px;
+		font-weight: 500;
+	}
+}
+
+%solidButton {
+	@extend %buttonUtil;
+	background-color: $color-primary;
+	height: 42px;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	padding: 0 32px;
+	border-radius: 30px;
+	width: 100%;
+	border: 1px solid $color-primary;
+
+	@include tab {
+		width: 180px;
+	}
+	@include desktop {
+		&:hover {
+			background-color: darken($color-primary, 10%);
+		}
+	}
+	&:active {
+		background-color: lighten($color-primary, 10%);
+	}
+}
+
+%disabled-button {
+	@extend %buttonUtil;
+	background-color: lighten(black, 90%);
+	height: 42px;
+	align-items: center;
+	justify-content: center;
+	color: lighten(black, 30%);
+	padding: 0 32px;
+	border-radius: 30px;
+	width: 100%;
+	cursor: not-allowed;
+
+	@include tab {
+		width: 180px;
+	}
+}
+
+.button {
+	@extend %solidButton;
+}
+
+.buttonDanger {
+	@extend %solidButton;
+	background-color: $color-danger;
+	border: 1px solid $color-danger;
+	@include desktop {
+		&:hover {
+			background-color: darken($color-danger, 10%);
+		}
+	}
+	&:active {
+		background-color: lighten($color-danger, 10%);
+	}
+}
+
+.buttonDisabled {
+	@extend %disabled-button;
+}
+
+.grayButton {
+	@extend %solidButton;
+	background-color: #f1f1f1;
+	color: $color-primary;
+	border: none;
+	@include desktop {
+		&:hover {
+			background-color: darken(#f1f1f1, 10%);
+		}
+	}
+	&:active {
+		background-color: darken(#f1f1f1, 30%);
+	}
+}
+
+.loadingButton {
+	@extend %buttonUtil;
+	cursor: no-drop;
+	background-color: darken($color-primary, 20%);
+	height: 42px;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	padding: 0 32px;
+	border-radius: 30px;
+	width: 100%;
+	border: 1px solid darken($color-primary, 20%);
+
+	@include tab {
+		width: 180px;
+	}
+}
+
+.buttonOutlined {
+	@extend %solidButton;
+	background-color: transparent;
+	color: $color-primary;
+	@include desktop {
+		&:hover {
+			background-color: $color-primary;
+			color: white;
+		}
+	}
+	&:active {
+		background-color: lighten($color-primary, 10%);
+	}
+}
+
+%dangerButtonUtil {
+	@extend %solidButton;
+	background-color: $color-danger;
+	border: 1px solid $color-danger;
+
+	@include desktop {
+		&:hover {
+			background-color: darken($color-danger, 20%);
+		}
+	}
+	&:active {
+		background-color: lighten($color-danger, 10%);
+	}
+}
+
+%longUtil {
+	width: 225px;
+}
+
+.danger {
+	@extend %dangerButtonUtil;
+	@extend %longUtil;
+}
+
+.longButton {
+	@extend %solidButton;
+	@extend %longUtil;
+}
+
+.longButtonDanger {
+	@extend %dangerButtonUtil;
+	@extend %longUtil;
+}
+
+.textButton {
+	@extend %buttonUtil;
+	color: dodgerblue;
+}
+
+.textButtonBg {
+	@extend %buttonUtil;
+	color: dodgerblue;
+	background-color: rgba(black, 0.075);
+	padding: 4px 16px;
+	border-radius: 4px;
+	margin: 2px;
+	p {
+		font-size: 14px;
+	}
+	@include desktop {
+		&:hover {
+			background-color: rgba(black, 0.125);
+		}
+	}
+	&:active {
+		background-color: rgba(black, 0.025);
+	}
+}
+
+.tags {
+	display: inline-flex;
+	height: 26px;
+	border: 1px solid $color-danger;
+	padding: 0 16px;
+	border-radius: 30px;
+
+	p {
+		font-size: 12px;
+		letter-spacing: 1px;
+		font-weight: 500;
+		color: $color-danger;
+	}
+}
+
+.buttonOutlinedLongDanger {
+	@extend %solidButton;
+	background-color: white;
+	color: crimson;
+	border: 1px solid crimson;
+
+	@extend %longUtil;
+
+	@include desktop {
+		&:hover {
+			background-color: crimson;
+			color: white;
+		}
+	}
+	&:active {
+		background-color: lighten(crimson, 10%);
+	}
+}
+
+.small {
+	@extend %solidButton;
+	height: 32px;
+	max-width: 100px;
+	p {
+		letter-spacing: 0px;
+		font-size: 14px;
+		font-weight: 500;
+	}
+}

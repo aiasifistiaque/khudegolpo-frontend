@@ -1,0 +1,74 @@
+.layout {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+.layout .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  background-color: white;
+  padding: 2rem;
+  -ms-flex-item-align: center;
+      align-self: center;
+  justify-self: center;
+  margin: 0;
+  form-margin: 1rem 0;
+}
+
+.layout .card a {
+  margin-top: 0.5rem;
+  color: dodgerblue;
+  cursor: pointer;
+}
+
+@media (min-width: 1008px) {
+  .layout .card a:hover {
+    -webkit-text-decoration-line: underline;
+            text-decoration-line: underline;
+  }
+}
+
+@media (min-width: 1008px) {
+  .layout .card {
+    -webkit-box-shadow: 0 22px 40px rgba(0, 91, 255, 0.12);
+            box-shadow: 0 22px 40px rgba(0, 91, 255, 0.12);
+    padding: 3rem;
+    width: 70%;
+    margin: 1rem auto;
+    border-radius: 10px;
+  }
+}
+
+@media (min-width: 1008px) {
+  .layout {
+    padding: 2rem 4rem;
+  }
+}
+
+.airtimeDetails {
+  margin-bottom: 1rem;
+}
+
+.airtimeDetails h6 {
+  font-weight: 600;
+  margin: 0.25rem 0;
+  letter-spacing: 0.5px;
+  word-break: break-all;
+}
+
+.airtimeDetails p {
+  font-size: 14px;
+  line-height: 21px;
+}
+/*# sourceMappingURL=Refill.module.css.map */

@@ -1,0 +1,133 @@
+@import '../../../styles/imports';
+
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+	width: 100%;
+}
+
+.center {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+
+.horizontal {
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-start;
+	width: 100%;
+}
+
+.centerHorizontal {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+}
+
+.centervertical {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	flex-direction: row;
+}
+
+.pageInnerLayout {
+	display: flex;
+	flex-direction: column;
+	padding: 1.5rem;
+	margin-bottom: 10rem;
+	max-width: 100vw;
+
+	@include desktop {
+		padding: 2rem 7.5rem;
+	}
+	li {
+		margin-bottom: 0.5rem;
+	}
+	h3 {
+		margin-top: 2rem;
+		margin-bottom: 1rem;
+	}
+	h4 {
+		margin-top: 2rem;
+		margin-bottom: 0.25rem;
+	}
+	h5 {
+		margin-top: 0.75rem;
+		margin-bottom: 0.25rem;
+		font-weight: 700;
+	}
+	h6 {
+		margin-top: 2rem;
+		margin-bottom: 1rem;
+	}
+	p {
+		margin-bottom: 1rem;
+	}
+	a {
+		color: $color-danger;
+	}
+}
+
+.pageContainer {
+	@include pageFlexCenter();
+	text-align: center;
+	color: rgba(black, 0.8);
+	margin: 4rem 1.5rem;
+	@include desktop {
+		margin: 4rem;
+	}
+}
+
+.rowItems {
+	padding-bottom: 0.5rem;
+	display: flex;
+	justify-content: space-between;
+	margin: 1rem 0;
+	flex-wrap: wrap;
+	border-bottom: 2px solid rgba(black, 0.05);
+}
+
+.rowItem {
+	flex: 1;
+
+	p {
+		font-size: 14px;
+	}
+}
+
+.rowTag {
+	flex: 0;
+	background-color: teal;
+	border-radius: 4px;
+	padding: 0.1rem 0.5rem;
+
+	p {
+		font-size: 10px;
+		color: black;
+		font-weight: 600;
+		text-transform: uppercase;
+	}
+}
+
+.faq {
+	margin-bottom: 4rem;
+	h3 {
+		margin-bottom: -1rem;
+	}
+	h6 {
+		margin-top: 3rem;
+		margin-bottom: 0.75rem;
+		font-size: 1.1rem;
+	}
+	p {
+		margin-bottom: 0.75rem;
+	}
+}

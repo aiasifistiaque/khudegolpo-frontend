@@ -1,0 +1,42 @@
+@import '../../styles/imports';
+
+%inputPartial {
+	input,
+	textarea,
+	select {
+		height: 30px;
+		border: none;
+		padding: 0 0.25rem;
+		border-radius: 4px;
+		background-color: whitesmoke;
+		border: 1px solid rgba(black, 0.1);
+		outline: none;
+
+		&:focus {
+			border: 1px solid rgba($color-primary, 0.8);
+			outline: none;
+		}
+	}
+	textarea {
+		padding: 1em;
+	}
+}
+
+.cInput {
+	display: flex;
+	flex-direction: column;
+	//margin-bottom: 1.5em;
+	max-width: 300px;
+
+	label {
+		font-family: Poppins;
+		font-size: 12px;
+		margin-bottom: 0.3em;
+		font-weight: 500;
+		@include btn-text-unselect;
+	}
+	@extend %inputPartial;
+	textarea {
+		min-height: 200px;
+	}
+}

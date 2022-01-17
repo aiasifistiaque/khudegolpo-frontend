@@ -1,0 +1,65 @@
+@import '../../../styles/imports';
+
+.container {
+	@extend %comment-container;
+	padding: 2rem 2rem;
+	@include desktop {
+		padding: 2rem 4rem;
+	}
+
+	.postComment {
+		display: flex;
+		flex-direction: column;
+		flex: 1;
+		width: 100%;
+		padding: 1rem 0;
+		@include desktop {
+			padding: 2rem 0;
+		}
+	}
+
+	h5 {
+		text-align: left;
+		align-self: start;
+		margin: 1rem 0;
+	}
+	.commentContainer {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+		flex: 1;
+		width: 100%;
+
+		.commentBox {
+			display: flex;
+			gap: 0.5rem;
+
+			.image {
+				padding: 0.25rem 0;
+				img {
+					width: 30px;
+					height: 30px;
+					border-radius: 100px;
+					object-fit: cover;
+				}
+			}
+			.text {
+				background-color: #f7f7f7;
+				border-radius: 20px;
+				padding: 0.5rem 1rem;
+				border-top-left-radius: 4px;
+				// h6,
+				// p {
+				// 	font-size: 14px;
+				// }
+				a {
+					font-weight: 700;
+				}
+				p {
+					color: rgba(black, 0.7);
+					margin-top: 0.25rem;
+				}
+			}
+		}
+	}
+}

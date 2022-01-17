@@ -1,0 +1,11 @@
+@import '../../styles/imports';
+
+.layout {
+	display: flex;
+	flex: 1;
+	flex-direction: column;
+	gap: 0.5rem;
+	@include desktop {
+		flex-direction: row;
+	}
+}

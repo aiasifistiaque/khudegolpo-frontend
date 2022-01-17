@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": "AAgBA,AAAA,SAAS,CAAC;EAbT,gBAAgB,ECID,OAAO;EDHtB,OAAO,EAAE,QAAQ;EACjB,aAAa,EAAE,GAAG;EAClB,MAAM,EAAE,YAAY;CAYpB;;AAFD,AATC,SASQ,CATR,CAAC,CAAC;EACD,SAAS,EAAE,MAAM;EACjB,cAAc,EAAE,SAAS;EACzB,WAAW,EAAE,GAAG;EAChB,KAAK,ECHO,KAAK;EDIjB,cAAc,EAAE,MAAM;CACtB;;AAOF,AAAA,OAAO,CAAC;EAjBP,gBAAgB,ECEF,OAAO;EDDrB,OAAO,EAAE,QAAQ;EACjB,aAAa,EAAE,GAAG;EAClB,MAAM,EAAE,YAAY;CAgBpB;;AAFD,AAbC,OAaM,CAbN,CAAC,CAAC;EACD,SAAS,EAAE,MAAM;EACjB,cAAc,EAAE,SAAS;EACzB,WAAW,EAAE,GAAG;EAChB,KAAK,EAU2B,KAAK;EATrC,cAAc,EAAE,MAAM;CACtB",
+    "sources": [
+        "Tags.module.scss",
+        "../../../styles/_imports.scss",
+        "../../../styles/utilities/_mixin.scss",
+        "../../../styles/utilities/_partials.scss"
+    ],
+    "names": [],
+    "file": "Tags.module.css"
+}

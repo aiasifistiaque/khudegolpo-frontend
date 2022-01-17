@@ -1,0 +1,62 @@
+@import '../../../styles/imports';
+
+.page {
+	display: flex;
+	min-height: 100vh;
+	background-color: $background-color;
+	padding-top: 4rem;
+}
+
+.overlay {
+	display: flex;
+	position: fixed;
+	overflow-y: hidden;
+	background-color: rgba(black, 0.8);
+	backdrop-filter: blur(5px);
+	min-height: 100vh;
+	width: 100vw;
+	z-index: 6;
+}
+
+.containerOverLay {
+	display: flex;
+	min-height: 100vh;
+	background-color: $background-color;
+	padding-top: 4rem;
+
+	//position: fixed;
+	flex-direction: column;
+	overflow-y: hidden;
+}
+
+.loadingPage {
+	@include flexCenter();
+	flex: 1;
+}
+
+.loadingInnerPage {
+	@include flexCenter();
+	flex: 1;
+	width: 100%;
+	min-height: 70vh;
+	margin: 4rem;
+	text-align: center;
+}
+
+.loader {
+	border: 6px solid #f1f1f1; /* Light grey */
+	border-top: 8px solid $color-primary; /* Blue */
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}

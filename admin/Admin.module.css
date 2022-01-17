@@ -1,0 +1,194 @@
+.container {
+  padding: 5rem 24px;
+  background-color: #f7f7f7;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-height: 100vh;
+}
+
+@media (min-width: 1008px) {
+  .container {
+    padding: 5rem 4rem;
+  }
+}
+
+.pagebuttoncontainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.pagebuttoncontainer .pageButton {
+  cursor: pointer;
+  background-color: rgba(0, 91, 255, 0.15);
+  padding: 2px 12px;
+  margin-right: 4px;
+  border-radius: 4px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.pagebuttoncontainer .pageButton:hover {
+  background-color: rgba(0, 91, 255, 0.25);
+}
+
+.pagebuttoncontainer .pageButton p {
+  font-size: 12px;
+  font-weight: 600;
+  color: #005bff;
+}
+
+.pagebuttoncontainer .pageButtonSelected {
+  background-color: rgba(0, 91, 255, 0.5);
+  padding: 2px 12px;
+  margin-right: 4px;
+  border-radius: 4px;
+  cursor: default;
+}
+
+.pagebuttoncontainer .pageButtonSelected p {
+  font-size: 12px;
+  font-weight: 600;
+  color: #005bff;
+}
+
+.pagebuttoncontainer .pageButtonText {
+  padding: 2px 12px;
+  margin-right: 4px;
+}
+
+.pagebuttoncontainer .pageButtonText p {
+  font-size: 12px;
+  font-weight: 600;
+  color: #005bff;
+}
+
+.itemContainer {
+  border: 0.5px solid rgba(0, 0, 0, 0.075);
+  border-radius: 4;
+  margin: 16px 0;
+  overflow: auto;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  background-color: white;
+}
+
+.itemContainer .items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 4;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-right-width: 0;
+  border-left-width: 0;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.itemContainer .item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: left;
+  min-width: 200px;
+  padding: 16px 32px;
+  border: 0.25px solid rgba(0, 0, 0, 0.075);
+  border-right-width: 0;
+  border-left-width: 0;
+}
+
+.itemContainer .item p,
+.itemContainer .item h6 {
+  font-size: 14px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.itemContainer .item a {
+  font-size: 14px;
+  color: dodgerblue;
+  cursor: pointer;
+}
+
+.loader {
+  border: 6px solid #f1f1f1;
+  /* Light grey */
+  border-top: 8px solid black;
+  /* Blue */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  -webkit-animation: spin 1s linear infinite;
+          animation: spin 1s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+.detailLayout {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.detailContainer {
+  padding: 2rem;
+  background-color: white;
+  border-radius: 10px;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  background-color: white;
+  overflow: auto;
+  margin: 2rem 0;
+}
+
+.detailContainer h5 {
+  margin-bottom: 1rem;
+}
+
+.detailItems {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.detailItems .detailItem {
+  border: 1px solid rgba(0, 0, 0, 0.075);
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 200px;
+  padding: 0.5rem 1rem;
+}
+
+.detailItems .detailItem p {
+  font-size: 14px;
+}
+
+.detailItems .detailItem a {
+  color: dodgerblue;
+}
+/*# sourceMappingURL=Admin.module.css.map */

@@ -1,0 +1,105 @@
+@import '../../styles/imports';
+
+.layout {
+	display: flex;
+	flex-direction: column;
+	padding: 1rem;
+	flex: 1;
+	@include desktop {
+		padding: 2rem 4rem;
+	}
+	.options {
+		display: flex;
+		justify-content: space-evenly;
+		width: 100%;
+		margin: 2rem 0;
+		background-color: white;
+		border-radius: 30px;
+		flex-wrap: wrap;
+		.option {
+			@include flexCenter();
+			border-radius: 30px;
+			padding: 0.5rem 2rem;
+			flex: 1;
+			text-align: center;
+			white-space: nowrap;
+
+			cursor: pointer;
+			@include desktop {
+				&:hover {
+					background-color: #f7f7f7;
+				}
+			}
+		}
+		.selected {
+			background-color: $color-primary;
+			color: white;
+			@include desktop {
+				&:hover {
+					background-color: $color-primary;
+				}
+			}
+		}
+	}
+	.mainContainer {
+		display: flex;
+		flex: 1;
+		width: 100%;
+		flex-direction: column;
+		box-shadow: $shadow-primary;
+		border-radius: $container-radius;
+		margin: 1rem 0;
+		padding: 1rem;
+		@include desktop {
+			padding: 2rem 4rem;
+		}
+		.books {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 0.25rem;
+			justify-content: space-evenly;
+			margin: 0.5rem 0;
+
+			@include desktop {
+				justify-content: space-evenly;
+			}
+
+			.book {
+				@include flexCenter(column);
+				padding-bottom: 0.5rem;
+				border-radius: 4px;
+				cursor: pointer;
+				width: 120px;
+				align-self: flex-start;
+				text-align: center;
+				margin-bottom: 1rem;
+				@include phone {
+					width: 150px;
+				}
+
+				@include desktop {
+					width: 220px;
+
+					&:hover {
+						background-color: rgba(black, 0.04);
+					}
+				}
+
+				img {
+					width: 100%;
+					height: 200px;
+					@include phone {
+						height: 220px;
+					}
+					object-fit: cover;
+					margin-bottom: 0.5rem;
+					border-radius: 4px;
+					@include desktop {
+						width: 100%;
+						height: 320px;
+					}
+				}
+			}
+		}
+	}
+}

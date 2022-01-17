@@ -1,0 +1,12 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,gBAAgB,CAAC;EAChB,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;EACtB,OAAO,EAAE,MAAM;CAoBf;;AAvBD,AAIC,gBAJe,CAIf,cAAc,CAAC;EACd,OAAO,EAAE,IAAI;EACb,SAAS,EAAE,IAAI;EACf,GAAG,EAAE,IAAI;EACT,MAAM,EAAE,MAAM;EACd,eAAe,EAAE,YAAY;CAa7B;;AAtBF,AAWE,gBAXc,CAIf,cAAc,CAOb,GAAG,CAAC;EACH,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,KAAK;EACb,MAAM,EAAE,OAAO;EACf,UAAU,EAAE,KAAK;EACjB,aAAa,EAAE,GAAG;CAKlB;;AESF,MAAM,EAAE,SAAS,EAAE,MAAM;EF9B1B,AAWE,gBAXc,CAIf,cAAc,CAOb,GAAG,CAAC;IAOF,KAAK,EAAE,KAAK;IACZ,MAAM,EAAE,KAAK;GAEd",
+    "sources": [
+        "Recommendations.module.scss",
+        "../../../styles/_imports.scss",
+        "../../../styles/utilities/_mixin.scss",
+        "../../../styles/utilities/_partials.scss"
+    ],
+    "names": [],
+    "file": "Recommendations.module.css"
+}

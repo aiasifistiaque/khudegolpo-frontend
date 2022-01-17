@@ -1,0 +1,44 @@
+@import '../../../styles/imports';
+
+.container {
+	@extend %comment-container;
+	padding-right: 1rem;
+	padding-left: 1rem;
+	width: 100%;
+	@include desktop {
+		width: 80%;
+	}
+
+	.chapterContainer {
+		display: flex;
+		flex-direction: column;
+		flex: 1;
+		width: 100%;
+		padding: 1rem 0;
+
+		.chapter {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: center;
+			padding: 1rem 1.5rem;
+			cursor: pointer;
+			border-left: 0.5rem solid transparent;
+
+			@include desktop {
+				padding: 1rem 4rem;
+
+				&:hover {
+					border-left: 0.5rem solid $color-primary;
+					background-color: rgba($color-primary, 0.1);
+				}
+			}
+			img {
+				width: 24px;
+				height: 24px;
+				object-fit: contain;
+				margin-left: 1rem;
+			}
+		}
+	}
+}

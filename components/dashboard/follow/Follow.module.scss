@@ -1,0 +1,66 @@
+@import '../../../styles/imports';
+
+.container {
+	@extend %dash-container;
+	.followers {
+		display: flex;
+		flex-direction: column;
+		margin: 2rem 0;
+		.item {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			margin: 0.5rem 0;
+
+			.user {
+				display: flex;
+				flex: 1;
+				align-items: center;
+				gap: 0.5rem;
+
+				.image {
+					display: flex;
+
+					img {
+						width: 60px;
+						height: 60px;
+						object-fit: cover;
+						border-radius: 60px;
+						@include desktop {
+							width: 40px;
+							height: 40px;
+						}
+					}
+				}
+				.text {
+					display: flex;
+					flex: 1;
+					flex-direction: column;
+					justify-content: center;
+					text-align: left;
+					.name {
+						cursor: pointer;
+					}
+					@include desktop {
+						flex: 0.4;
+						.name {
+							&:hover {
+								text-decoration-line: underline;
+							}
+						}
+					}
+					.info {
+						display: flex;
+						flex-direction: column;
+						gap: 0.1rem;
+
+						@include desktop {
+							flex-direction: row;
+							gap: 0.5rem;
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,58 @@
+@import '../../../styles/imports';
+
+.layout {
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	.card {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		background-color: white;
+		padding: 2rem;
+		align-self: center;
+		justify-self: center;
+		margin: 0;
+
+		form: {
+			margin: 1rem 0;
+		}
+		a {
+			margin-top: 0.5rem;
+			color: dodgerblue;
+			cursor: pointer;
+			@include desktop {
+				&:hover {
+					text-decoration-line: underline;
+				}
+			}
+		}
+
+		@include desktop {
+			box-shadow: 0 22px 40px rgba(#005bff, 0.12);
+
+			padding: 3rem;
+			width: 70%;
+			margin: 1rem auto;
+			border-radius: $container-radius;
+		}
+	}
+
+	@include desktop {
+		padding: 2rem 4rem;
+	}
+}
+
+.airtimeDetails {
+	margin-bottom: 1rem;
+	h6 {
+		font-weight: 600;
+		margin: 0.25rem 0;
+		letter-spacing: 0.5px;
+		word-break: break-all;
+	}
+	p {
+		font-size: 14px;
+		line-height: 21px;
+	}
+}

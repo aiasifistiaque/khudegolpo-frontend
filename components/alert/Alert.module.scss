@@ -1,0 +1,35 @@
+@import '../../styles/imports';
+
+.container {
+	width: 80%;
+	min-height: 30vh;
+	top: 20%;
+	left: 10%;
+
+	@include desktop {
+		width: 50%;
+		top: 20%;
+		left: 20%;
+	}
+	@include flexCenter(column);
+	position: fixed;
+
+	transition: visibility 1s linear;
+	border-radius: 4px;
+	justify-content: flex-start;
+	z-index: 15;
+	background-color: white;
+	padding: 2rem;
+	display: none;
+	.closeButton {
+		align-self: flex-end;
+		padding: 1rem;
+		cursor: pointer;
+		display: flex;
+		img {
+			height: contain;
+			width: 24px;
+			object-fit: cover;
+		}
+	}
+}

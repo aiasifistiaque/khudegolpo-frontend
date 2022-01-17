@@ -1,0 +1,58 @@
+.cInput input[type='number']::-webkit-inner-spin-button,
+.cInput input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.cInput input,
+.cInput textarea,
+.cInput select {
+  height: 42px;
+  width: 100%;
+  border: none;
+  padding: 0 1em;
+  border-radius: 30px;
+  background-color: white;
+  border: 2px solid rgba(0, 91, 255, 0.1);
+  outline: none;
+}
+
+.cInput input:focus,
+.cInput textarea:focus,
+.cInput select:focus {
+  border: 2px solid #005bff;
+  outline: none;
+}
+
+
+.cInput textarea {
+  padding: 1em;
+}
+
+.cInput {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 1.5em;
+  width: 100%;
+}
+
+.cInput label {
+  font-family: Poppins;
+  font-size: 12px;
+  margin-bottom: 0.3em;
+  font-weight: 500;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.cInput textarea {
+  min-height: 200px;
+}
+/*# sourceMappingURL=TextInput.module.css.map */
