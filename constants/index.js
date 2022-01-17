@@ -11,10 +11,10 @@ export const dev = 'http://localhost:5000/api';
 const environmentDev = 'http://localhost:5000';
 const environmentProd = backendUrl;
 
-const frontDev = 'https://arewa-iota.vercel.app/login';
+const frontDev = 'https://khudegolpo.vercel.app/login';
 
 export const frontend = frontDev;
-export const url = 'https://arewabooks.com';
+export const url = 'https://khudegolpo.vercel.app';
 
 const isBackend = false;
 

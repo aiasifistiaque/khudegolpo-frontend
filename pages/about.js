@@ -6,7 +6,7 @@ const about = () => {
 	return (
 		<Page>
 			<PageInnerLayout>
-				<h5>MEET AREWA BOOKS</h5>
+				<h5>MEET Khudegolpo</h5>
 				<br />
 
 				<p>
@@ -37,7 +37,7 @@ const about = () => {
 					{`"Hausa Bookstore"`}, until a number of reviews, feedback and
 					suggestions from users inspired an upgrade which led to a total
 					overhauling of the platform&apos;s design and brand name into what you
-					have today, {`"AREWA BOOKS PUBLISHERS"`}. He finalized this process in
+					have today, {`"Khudegolpo PUBLISHERS"`}. He finalized this process in
 					August, completed the paper works in November and plans to launched in
 					December, 2021.
 				</p>

@@ -44,7 +44,7 @@ const BankTransfer = () => {
 				<h5>Bank Transfer</h5>
 				<p style={{ margin: '1rem 0' }}>
 					Pay into{' '}
-					<strong>Zenith Bank, 1220077999, AREWA BOOKS PUBLISHERS</strong> then
+					<strong>Zenith Bank, 1220077999, Khudegolpo PUBLISHERS</strong> then
 					fill the form below. Please include your username in the narration.
 					<br />
 					for assistance call 09031774742

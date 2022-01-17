@@ -10,7 +10,7 @@ const Footer = () => {
 			<div className={styles.footer}>
 				<div className={styles.contact}>
 					<h5>Contact Us</h5>
-					<p style={{ fontSize: '1.2rem' }}>Arewa Books Publishers</p>
+					<p style={{ fontSize: '1.2rem' }}>Khudegolpo Publishers</p>
 					<p>WhatsApp: 09031774742 </p>
 					<p>Email: arewabookspublishers@gmail.com</p>
 					<p></p>
@@ -28,7 +28,7 @@ const Footer = () => {
 					<StoreIcons />
 				</div>
 				<p>
-					Copyright 2021, Arewa Books | ALL RIGHTS RESERVED | Powered by{' '}
+					Copyright 2021, Khudegolpo | ALL RIGHTS RESERVED | Powered by{' '}
 					<a href='http://thinkcrypt.io'>thinkcrypt.io</a>
 				</p>
 			</div>

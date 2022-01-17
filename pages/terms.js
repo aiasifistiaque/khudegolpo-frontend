@@ -8,13 +8,13 @@ const terms = () => {
 			<PageInnerLayout>
 				<h5>Terms of Service</h5>
 				<h6>
-					Welcome to AREWA BOOKS PUBLISHERS {`(“Company”, “we”, “our”, “us”)!`}
+					Welcome to Khudegolpo PUBLISHERS {`(“Company”, “we”, “our”, “us”)!`}
 				</h6>
 				<p>
 					These Terms of Service {`(“Terms”, “Terms of Service”)`} govern your
 					use of our website located at{' '}
 					<a href='https://arewabooks.com'>arewabooks.com</a>{' '}
-					{`(together or individually “Service”)`} operated by AREWA BOOKS
+					{`(together or individually “Service”)`} operated by Khudegolpo
 					PUBLISHERS.
 				</p>
 

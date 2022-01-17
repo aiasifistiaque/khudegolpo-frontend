@@ -49,7 +49,7 @@ const PrivacyPolicy = () => {
 				<li>
 					Company {`(`}referred to as either {`"`}the Company{`"`}, {`"`}We
 					{`"`}, {`"`}Us{`"`} or {`"`}Our{`"`} in this Agreement{`)`} refers to
-					Arewa Books Publishers, 235 Limawa Hotoro, Kano, Kano State.
+					Khudegolpo Publishers, 235 Limawa Hotoro, Kano, Kano State.
 				</li>
 				<li>
 					Cookies are small files that are placed on Your computer, mobile
@@ -85,7 +85,7 @@ const PrivacyPolicy = () => {
 					for example, the duration of a page visit{`)`}.
 				</li>
 				<li>
-					Website refers to Arewa Books , accessible from{' '}
+					Website refers to Khudegolpo , accessible from{' '}
 					<Link href='/'>
 						<a>{`"arewabooks.com"`}</a>
 					</Link>

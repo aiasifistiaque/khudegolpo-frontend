@@ -73,7 +73,7 @@ const Chap = ({ data }) => {
 		<>
 			<Head>
 				<title>{data?.title}</title>
-				<meta name='description' content='arewa books' />
+				<meta name='description' content='Khudegolpo' />
 				<link rel='icon' href='/favicon.ico' />
 				<meta
 					name='viewport'
@@ -97,11 +97,7 @@ const Chap = ({ data }) => {
 					key='ogurl'
 				/>
 
-				<meta
-					property='og:site_name'
-					content={'Arewa Books'}
-					key='ogsitename'
-				/>
+				<meta property='og:site_name' content={'Khudegolpo'} key='ogsitename' />
 			</Head>
 			{initLoading ? (
 				<LoadingPage seo />

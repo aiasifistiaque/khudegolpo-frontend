@@ -39,7 +39,7 @@ const Header = ({ barPressed, open, close, on, search, onClick }) => {
 							marginRight: 4,
 						}}
 					/>
-					<h5>AREWA BOOKS</h5>
+					<h5>Khudegolpo</h5>
 				</Row>
 			</div>
 			{loggedIn ? (

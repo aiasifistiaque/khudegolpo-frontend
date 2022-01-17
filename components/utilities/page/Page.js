@@ -18,8 +18,8 @@ const Page = ({ children, title, description, image, seo }) => {
 		<div>
 			{!seo && (
 				<Head>
-					<title>{title ? title : 'Arewa Books'}</title>
-					<meta name='description' content='arewa books' />
+					<title>{title ? title : 'Khudegolpo'}</title>
+					<meta name='description' content='Khudegolpo' />
 					<link rel='icon' href='/favicon.ico' />
 					<meta
 						name='viewport'
@@ -36,7 +36,7 @@ const Page = ({ children, title, description, image, seo }) => {
 					/>
 					<meta
 						property='og:site_name'
-						content={'Arewa Books'}
+						content={'Khudegolpo'}
 						key='ogsitename'
 					/>
 				</Head>
