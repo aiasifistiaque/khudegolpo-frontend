@@ -24,7 +24,7 @@ const WithdrawFragment = ({ data, sort }) => {
 			{data.map((item, i) => (
 				<AdminItemRow key={i}>
 					<AdminItem>{item.user.username}</AdminItem>
-					<AdminItem>{item.amount} NGN</AdminItem>
+					<AdminItem>{item.amount} BDT</AdminItem>
 					<AdminItem>{item.status}</AdminItem>
 					<AdminItem>{moment(item.createdAt).format('MMM Do YY')}</AdminItem>
 					<AdminItem link href={`/admin/withdraw?uid=${item._id}`}>

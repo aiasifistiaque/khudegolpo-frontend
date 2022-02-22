@@ -53,7 +53,7 @@ const ItemContainer = ({ data }) => {
 			<DetailItems title='Author' href={`/admin/user?uid=${data.author._id}`}>
 				{data.author.username}
 			</DetailItems>
-			<DetailItems title='Price'>{data.price} NGN</DetailItems>
+			<DetailItems title='Price'>{data.price} BDT</DetailItems>
 			<DetailItems title='Purchase Date' date>
 				{data.createdAt}
 			</DetailItems>

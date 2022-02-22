@@ -50,7 +50,7 @@ const DetailItems = ({
 				) : (
 					<p>
 						{date ? moment(child).format('MMMM Do YYYY, h:mm:ss a') : child}
-						{amount && ' NGN'}
+						{amount && ' BDT'}
 					</p>
 				)}
 			</div>

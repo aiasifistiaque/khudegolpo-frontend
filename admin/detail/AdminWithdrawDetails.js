@@ -92,7 +92,7 @@ const ItemContainer = ({ initialValue }) => {
 				{data.user.username}
 			</DetailItems>
 			<DetailItems title='User Email'>{data.user.email}</DetailItems>
-			<DetailItems title='Amount'>{data.amount} NGN</DetailItems>
+			<DetailItems title='Amount'>{data.amount} BDT</DetailItems>
 			<DetailItems title='Name'>{data.name}</DetailItems>
 			<DetailItems title='Account No'>{data.account}</DetailItems>
 			<DetailItems title='Bank'>{data.bank}</DetailItems>

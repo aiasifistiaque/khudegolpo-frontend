@@ -101,7 +101,7 @@ const CreateChapter = () => {
 							/>
 							{paid && (
 								<TextInput
-									label='Price (NGN)'
+									label='Price (BDT)'
 									value={price}
 									onChange={e => setPrice(e)}
 									type='number'

@@ -57,7 +57,7 @@ const Airtime = () => {
 				/>
 				<AirtimeTransfer network={network} />
 				<TextInput
-					label='Transferred Amount (min: 100NGN)'
+					label='Transferred Amount (min: 100BDT)'
 					placeholder='Example: 2000'
 					value={amount}
 					onChange={e => setAmount(e)}

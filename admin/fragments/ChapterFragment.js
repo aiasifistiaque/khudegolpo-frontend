@@ -22,8 +22,8 @@ const ChapterFragment = ({ data }) => {
 				<AdminItemRow key={i}>
 					<AdminItem>{item.title}</AdminItem>
 					<AdminItem>{item.paid ? 'Paid' : 'Free'}</AdminItem>
-					<AdminItem>{item.price} NGN</AdminItem>
-					<AdminItem>{item.earned} NGN</AdminItem>
+					<AdminItem>{item.price} BDT</AdminItem>
+					<AdminItem>{item.earned} BDT</AdminItem>
 					<AdminItem>{item.views}</AdminItem>{' '}
 					<AdminItem>{item.status}</AdminItem>
 					<AdminItem>{moment(item.createdAt).format('MMM Do YY')}</AdminItem>

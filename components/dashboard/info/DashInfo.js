@@ -40,7 +40,7 @@ const WalletItem = ({ children, title, button, href }) => {
 		<div className={styles.item}>
 			<div className={styles.text}>
 				<h6>{title}</h6>
-				<p>{children} NGN</p>
+				<p>{children} BDT</p>
 			</div>
 			<div className={styles.button}>
 				<TextButton

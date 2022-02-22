@@ -57,7 +57,7 @@ const LockedBookInfo = ({ chapter, onAlertClick }) => {
 						journey into this amazing book
 					</BlueText>
 					<div className={styles.unlock} onClick={onAlertClick}>
-						<p className={styles.price}>{chapter.price} NGN</p>
+						<p className={styles.price}>{chapter.price} BDT</p>
 						<p className={styles.open}>Unlock this part</p>
 					</div>
 					<BlueText>

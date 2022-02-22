@@ -84,7 +84,7 @@ const Details = ({ chapter }) => {
 		<div className={styles.alertInfo}>
 			<h5>{chapter.book.title}</h5>
 			<p>Chpater: {chapter.title}</p>
-			<h6>Price: {chapter.price} NGN</h6>
+			<h6>Price: {chapter.price} BDT</h6>
 		</div>
 	);
 };

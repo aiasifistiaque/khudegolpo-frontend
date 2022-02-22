@@ -25,7 +25,7 @@ const RefillFragment = ({ data, sort }) => {
 				<AdminItemRow key={i}>
 					<AdminItem>{item.type}</AdminItem>
 					<AdminItem>{item.status}</AdminItem>
-					<AdminItem>{item.amount} NGN</AdminItem>
+					<AdminItem>{item.amount} BDT</AdminItem>
 					<AdminItem>{moment(item.createdAt).format('MMM Do YY')}</AdminItem>
 					<AdminItem link href={`/admin/refill?uid=${item._id}`}>
 						View

@@ -26,7 +26,7 @@ const Withdraw = () => {
 		e.preventDefault();
 		setErr(false);
 		if (amount < 2000) {
-			setErr('Minimum amount must be 2000 NGN');
+			setErr('Minimum amount must be 2000 BDT');
 			return;
 		}
 		const withdraw = { name, amount, account, bank, branch };
@@ -44,7 +44,7 @@ const Withdraw = () => {
 			<br />
 			<form onSubmit={onSubmit}>
 				<TextInput
-					label='Enter an amount (minimum 2000 NGN)'
+					label='Enter an amount (minimum 2000 BDT)'
 					placeholder='2000'
 					value={amount}
 					onChange={e => setAmount(e)}

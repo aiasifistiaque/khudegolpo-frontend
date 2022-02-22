@@ -37,7 +37,7 @@ const PageUnlocks = () => {
 						<RowItem>
 							{i.book.title}: {i.chapter.title}
 						</RowItem>
-						<RowItem tag>{i.price}NGN</RowItem>
+						<RowItem tag>{i.price}BDT</RowItem>
 					</RowItemContainer>
 				))}
 				<PageSelector page={page} pages={pages} setOnPage={e => setOnPage(e)} />

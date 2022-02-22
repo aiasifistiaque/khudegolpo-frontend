@@ -39,7 +39,7 @@ const Pagewithdraws = () => {
 							router.push(`/report?type=withdraw&target=${i._id}`)
 						}>
 						<RowItem date>{i.createdAt}</RowItem>
-						<RowItem>{i.amount} NGN</RowItem>
+						<RowItem>{i.amount} BDT</RowItem>
 						<RowItem tag>{i.status}</RowItem>
 					</RowItemContainer>
 				))}

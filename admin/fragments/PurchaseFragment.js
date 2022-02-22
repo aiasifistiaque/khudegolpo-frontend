@@ -30,7 +30,7 @@ const PurchaseFragment = ({ data, sort }) => {
 					<AdminItem>{item.chapter.title}</AdminItem>
 					<AdminItem>{item.book.title}</AdminItem>
 					<AdminItem>{item.author.username}</AdminItem>
-					<AdminItem>{item.price} NGN</AdminItem>
+					<AdminItem>{item.price} BDT</AdminItem>
 					<AdminItem date>{item.createdAt}</AdminItem>
 					<AdminItem link href={`/admin/purchase?uid=${item._id}`}>
 						View

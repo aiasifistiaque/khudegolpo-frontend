@@ -88,7 +88,7 @@ const ItemContainer = ({ initialValue }) => {
 			</DetailItems>
 			<DetailItems title='Id'>{data._id}</DetailItems>
 			<DetailItems title='User'>{data.user.username}</DetailItems>
-			<DetailItems title='Category'>{data.category} NGN</DetailItems>
+			<DetailItems title='Category'>{data.category} BDT</DetailItems>
 			<DetailItems title='Type'>{data.type}</DetailItems>
 			<DetailItems title='Target'>{data.target}</DetailItems>
 			<DetailItems

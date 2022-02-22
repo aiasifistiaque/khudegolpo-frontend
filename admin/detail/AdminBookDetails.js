@@ -108,7 +108,7 @@ const ItemContainer = ({ book }) => {
 			</DetailItems>
 			<DetailItems title='Genre'>{data.genre}</DetailItems>
 			<DetailItems title='Type'>{data.type}</DetailItems>
-			<DetailItems title='Earning'>{data.earned} NGN</DetailItems>
+			<DetailItems title='Earning'>{data.earned} BDT</DetailItems>
 			<DetailItems title='Language'>{data.language}</DetailItems>
 			<DetailItems title='Rating'>{data.rating}</DetailItems>
 			<DetailItems title='Views'>{data.views}</DetailItems>

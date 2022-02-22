@@ -51,8 +51,8 @@ const BankTransfer = () => {
 				</p>
 				<form onSubmit={submitForm}>
 					<TextInput
-						label='Amount Paid (min: 100NGN)'
-						placeholder='Example: 2000 NGN'
+						label='Amount Paid (min: 100BDT)'
+						placeholder='Example: 2000 BDT'
 						value={amount}
 						onChange={e => setAmount(e)}
 						required

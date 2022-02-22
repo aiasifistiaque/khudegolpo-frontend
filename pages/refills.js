@@ -37,7 +37,7 @@ const Pagerefills = () => {
 						key={i._id}
 						onClick={() => router.push(`/report?type=refill&target=${i._id}`)}>
 						<RowItem date>{i.createdAt}</RowItem>
-						<RowItem>{i.amount} NGN</RowItem>
+						<RowItem>{i.amount} BDT</RowItem>
 						<RowItem tag>{i.status}</RowItem>
 					</RowItemContainer>
 				))}

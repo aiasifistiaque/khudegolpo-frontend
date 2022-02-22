@@ -58,7 +58,7 @@ const Refill = () => {
 			<h5>Refill your account</h5>
 			<br />
 			<TextInput
-				label='Enter an amount (NGN)'
+				label='Enter an amount (BDT)'
 				placeholder='example: 2000'
 				value={amount}
 				onChange={e => setAmount(e)}

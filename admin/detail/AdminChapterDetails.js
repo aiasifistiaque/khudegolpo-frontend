@@ -97,8 +97,8 @@ const ItemContainer = ({ initialValue }) => {
 				{data.book.author.username}
 			</DetailItems>
 			<DetailItems title='Type'>{data.paid ? 'Paid' : 'Free'}</DetailItems>
-			<DetailItems title='Price'>{data.price} NGN</DetailItems>
-			<DetailItems title='Earning'>{data.earning} NGN</DetailItems>
+			<DetailItems title='Price'>{data.price} BDT</DetailItems>
+			<DetailItems title='Earning'>{data.earning} BDT</DetailItems>
 			<DetailItems
 				title='Status'
 				title='Status'
