@@ -64,13 +64,13 @@
 }
 
 .layout .options .selected {
-  background-color: #005bff;
+  background-color: #483D8B;
   color: white;
 }
 
 @media (min-width: 1008px) {
   .layout .options .selected:hover {
-    background-color: #005bff;
+    background-color: #483D8B;
   }
 }
 

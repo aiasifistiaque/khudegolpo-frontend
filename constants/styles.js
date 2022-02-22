@@ -3,8 +3,8 @@
 export const colors = {
 	primaryLighter: 'rgba(0,91,255,.15)',
 	primaryLight: 'rgba(0,91,255,.3)',
-	indicator: '#005bff',
-	primary: '#005bff',
+	indicator: '#483D8B',
+	primary: '#483D8B',
 	danger: '#ff3152',
 	dangerLight: 'rgba(255,49,82,.1)',
 	black: '#000000',
@@ -20,7 +20,7 @@ export const colors = {
 	caption: '#808080',
 	dodgerblue: '#1E90FF',
 	shadow: {
-		shadowColor: '#005bff',
+		shadowColor: '#483D8B',
 		shadowOffset: {
 			width: 10,
 			height: 10,

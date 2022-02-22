@@ -28,7 +28,7 @@ const BookLink = () => {
 	return (
 		<Link href='/book?id=61430257d2a09f8955de4b0a'>
 			<img
-				src='https://arewabooks.s3.us-east-2.amazonaws.com/1635370612372_book2.jpg'
+				src='https://Khude Golpo.s3.us-east-2.amazonaws.com/1635370612372_book2.jpg'
 				alt='book one'
 				className={styles.sectionbooks}
 			/>

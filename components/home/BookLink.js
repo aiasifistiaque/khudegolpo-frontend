@@ -10,7 +10,7 @@ const BookLink = ({ book }) => {
 					src={
 						book.image
 							? book.image
-							: 'https://arewabooks.s3.us-east-2.amazonaws.com/1635370612372_book2.jpg'
+							: 'https://Khude Golpo.s3.us-east-2.amazonaws.com/1635370612372_book2.jpg'
 					}
 					alt={book.title}
 				/>

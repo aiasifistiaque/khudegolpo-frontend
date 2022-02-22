@@ -13,7 +13,7 @@ const terms = () => {
 				<p>
 					These Terms of Service {`(“Terms”, “Terms of Service”)`} govern your
 					use of our website located at{' '}
-					<a href='https://arewabooks.com'>arewabooks.com</a>{' '}
+					<a href='https://Khude Golpo.com'>Khude Golpo.com</a>{' '}
 					{`(together or individually “Service”)`} operated by Khudegolpo
 					PUBLISHERS.
 				</p>
@@ -33,7 +33,7 @@ const terms = () => {
 				<p>
 					If you do not agree with {`(or cannot comply with)`} Agreements, then
 					you may not use the Service, but please let us know by emailing at{' '}
-					<a>arewabookspublishers@gmail.com</a> so we can try to find a
+					<a>Khude Golpopublishers@gmail.com</a> so we can try to find a
 					solution. These Terms apply to all visitors, users and others who wish
 					to access or use Service.
 				</p>
@@ -74,9 +74,9 @@ const terms = () => {
 				<h6>CHAPTER IMAGE</h6>
 
 				<p>
-					On chapter images. ArewaBooks reserves the right to remove any image
-					considered inappropriate for ArewaBooks in order to help maintain it a
-					safe area for everyone to share and discover content.
+					On chapter images. Khude Golpo reserves the right to remove any image
+					considered inappropriate for Khude Golpo in order to help maintain it
+					a safe area for everyone to share and discover content.
 				</p>
 
 				<h6>CHAPTER COMMENTS</h6>
@@ -92,8 +92,9 @@ const terms = () => {
 
 				<p>
 					Writers are allowed to publish both Free Books and Paid Books to earn
-					with their stories, can set price by chapters. Arewabooks take 25% for
-					each sell, while you received 75% royalties into your earnings wallet.
+					with their stories, can set price by chapters. Khude Golpo take 25%
+					for each sell, while you received 75% royalties into your earnings
+					wallet.
 				</p>
 
 				<h6>REFILL</h6>
@@ -108,7 +109,7 @@ const terms = () => {
 
 				<p>
 					When your earnings reach 2,000 to up, you are eligible for withdrawal
-					request. Arewabooks will proceed your payment to your desire bank
+					request. Khude Golpo will proceed your payment to your desire bank
 					accout that provide within a week.
 				</p>
 
@@ -118,22 +119,22 @@ const terms = () => {
 					Any content that we find to be inappropriate or sexual will be
 					removed. Any content that can harm our community will be removed. Also
 					content that promotes items or services that are not related to or
-					recognized by ArewaBooks is prohibited and will be removed. ArewaBooks
-					reserves the right to terminate any account or remove any content at
-					any time.
+					recognized by Khude Golpo is prohibited and will be removed. Khude
+					Golpo reserves the right to terminate any account or remove any
+					content at any time.
 				</p>
 
 				<h6>THIRD-PARTY WEBSITES, ADVERTISERS OR SERVICES</h6>
 
 				<p>
-					ArewaBooks may contain links to third-party websites, advertisers, or
-					services that are not owned or controlled by ArewaBooks. ArewaBooks
+					Khude Golpo may contain links to third-party websites, advertisers, or
+					services that are not owned or controlled by Khude Golpo. Khude Golpo
 					has no control over, and assumes no responsibility for, the content,
 					privacy policies, or practices of any third party websites or
-					services. If you access a third party website from ArewaBooks, you do
-					so at your own risk, and you understand that this Agreement and
-					ArewaBooks Privacy Policy do not apply to your use of such sites. You
-					expressly relieve ArewaBooks from any and all liability arising from
+					services. If you access a third party website from Khude Golpo, you do
+					so at your own risk, and you understand that this Agreement and Khude
+					Golpo Privacy Policy do not apply to your use of such sites. You
+					expressly relieve Khude Golpo from any and all liability arising from
 					your use of any third-party website or services or third party owned
 					content.
 				</p>
@@ -148,7 +149,7 @@ const terms = () => {
 
 				<p>
 					Please go to that content and Report Copyright Infringement if you
-					want to submit a copyright infringement claim. ArewaBooks maintains
+					want to submit a copyright infringement claim. Khude Golpo maintains
 					the right, at its absolute discretion, to remove content that is found
 					to be infringing without prior notification or liability to you or
 					anyone else. If a user is determined to be a repeat infringement, we
@@ -214,7 +215,7 @@ const terms = () => {
 
 				<p>
 					Please send your feedback, comments, requests for technical support by
-					email: <a>arewabookspublishers@gmail.com</a>
+					email: <a>Khude Golpopublishers@gmail.com</a>
 				</p>
 			</PageInnerLayout>
 		</Page>

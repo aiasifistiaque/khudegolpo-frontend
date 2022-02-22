@@ -12,7 +12,7 @@ const Footer = () => {
 					<h5>Contact Us</h5>
 					<p style={{ fontSize: '1.2rem' }}>Khudegolpo Publishers</p>
 					<p>WhatsApp: 09031774742 </p>
-					<p>Email: arewabookspublishers@gmail.com</p>
+					<p>Email: Khude Golpopublishers@gmail.com</p>
 					<p></p>
 				</div>
 

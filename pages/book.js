@@ -101,7 +101,7 @@ const BooK = ({ data }) => {
 							<>
 								<Row column center style={{ margin: '5rem 0' }}>
 									<h5 style={{ fontWeight: 600, textAlign: 'center' }}>
-										This book is available only in ArewaBooks Mobile App
+										This book is available only in Khude Golpo Mobile App
 									</h5>
 									<br />
 									<Row>

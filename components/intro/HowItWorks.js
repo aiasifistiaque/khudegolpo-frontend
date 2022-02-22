@@ -7,7 +7,7 @@ const HowItWorks = () => {
 			<h3>How This Works!!!</h3>
 			<div className={styles.container}>
 				<Section image='/hiw1.png' title='Create'>
-					AREWABOOKS is a great place to share your creative stories. Discover
+					KHUDEGOLPO is a great place to share your creative stories. Discover
 					the writing tools you{`'`}ll need to write a storyline.
 				</Section>
 				<SectionReverse image='/hiw2.png' title='Build'>

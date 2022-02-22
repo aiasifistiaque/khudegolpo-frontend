@@ -36,7 +36,7 @@
 .pagebuttoncontainer .pageButton p {
   font-size: 12px;
   font-weight: 600;
-  color: #005bff;
+  color: #483D8B;
 }
 
 .pagebuttoncontainer .pageButtonSelected {
@@ -50,7 +50,7 @@
 .pagebuttoncontainer .pageButtonSelected p {
   font-size: 12px;
   font-weight: 600;
-  color: #005bff;
+  color: #483D8B;
 }
 
 .pagebuttoncontainer .pageButtonText {
@@ -61,7 +61,7 @@
 .pagebuttoncontainer .pageButtonText p {
   font-size: 12px;
   font-weight: 600;
-  color: #005bff;
+  color: #483D8B;
 }
 
 .itemContainer {

@@ -97,7 +97,7 @@
 .container .options .selected {
   padding: 0.5rem 2rem;
   background-color: rgba(0, 91, 255, 0.1);
-  border-left: 0.5rem solid #005bff;
+  border-left: 0.5rem solid #483D8B;
 }
 
 @media (min-width: 1008px) {

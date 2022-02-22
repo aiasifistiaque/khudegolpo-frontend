@@ -19,7 +19,7 @@
 }
 
 .button, .buttonDanger, .grayButton, .buttonOutlined, .danger, .longButtonDanger, .longButton, .buttonOutlinedLongDanger, .small {
-  background-color: #005bff;
+  background-color: #483D8B;
   height: 42px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -31,7 +31,7 @@
   padding: 0 32px;
   border-radius: 30px;
   width: 100%;
-  border: 1px solid #005bff;
+  border: 1px solid #483D8B;
 }
 
 @media (min-width: 640px) {
@@ -89,7 +89,7 @@
 
 .grayButton {
   background-color: #f1f1f1;
-  color: #005bff;
+  color: #483D8B;
   border: none;
 }
 
@@ -128,12 +128,12 @@
 
 .buttonOutlined {
   background-color: transparent;
-  color: #005bff;
+  color: #483D8B;
 }
 
 @media (min-width: 1008px) {
   .buttonOutlined:hover {
-    background-color: #005bff;
+    background-color: #483D8B;
     color: white;
   }
 }

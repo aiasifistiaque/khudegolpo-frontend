@@ -76,7 +76,7 @@
     padding: 1rem 4rem;
   }
   .container .chapterContainer .chapter:hover {
-    border-left: 0.5rem solid #005bff;
+    border-left: 0.5rem solid #483D8B;
     background-color: rgba(0, 91, 255, 0.1);
   }
 }

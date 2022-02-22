@@ -12,10 +12,12 @@ const SectionOne = () => {
 				<img src='/homesection1.png' alt='section one' />
 			</div>
 			<div className={styles.text}>
-				<h4 style={{ color: colors.primary, fontWeight: '700' }}>AREWABOOKS</h4>
+				<h4 style={{ color: colors.primary, fontWeight: '700' }}>
+					Khude Golpo
+				</h4>
 				<p>The Largest African social storytelling platform</p>
 				<p>
-					Along the magic of stories, Arewabooks brings together of writers and
+					Along the magic of stories, Khude Golpo brings together of writers and
 					readers community.
 				</p>
 				<Link href='/login'>

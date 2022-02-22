@@ -9,9 +9,9 @@ const faq = () => {
 			<PageCard>
 				<FaqContainer>
 					<h3>Frequently Asked Questions</h3>
-					<h6>YAYA AREWABOOKS TAKE AIKI NE?</h6>
+					<h6>YAYA Khude Golpo TAKE AIKI NE?</h6>
 					<p>
-						ArewaBooks zata bawa marubuci damar wallafa/rubuta littafansa akan
+						Khude Golpo zata bawa marubuci damar wallafa/rubuta littafansa akan
 						tsarin Parts/Chapters, sannan yana da ikon saka littafinsa a Free ko
 						Paid akan kowani Chapter/Part.
 					</p>
@@ -22,7 +22,7 @@ const faq = () => {
 					</p>
 					<h6>TAYAYA ZAMU GA CINIKAIYARMU?</h6>
 					<p>
-						Acikin ArewaBooks akwai bayyanannen asusu (wallet) har kala biyu.
+						Acikin Khude Golpo akwai bayyanannen asusu (wallet) har kala biyu.
 						Earning da Recharge/Refill.
 					</p>
 					<p>
@@ -31,12 +31,12 @@ const faq = () => {
 					</p>
 					<p>
 						RECHARGE/REFILL - asusu ce ta makaranta kafin su iya sayen
-						littafanku sai sunfara saka kudi ta ArewaBooks account dinsu, tau
+						littafanku sai sunfara saka kudi ta Khude Golpo account dinsu, tau
 						duk kudin da zasu saka acikin wannan asusun zai bayyana.
 					</p>
 					<h6>TOH TAYAYA MAKARANTA ZASU SAKA KUDI?</h6>
 					<p>
-						ArewaBooks ta saukaka hanyar da makaranta zasu saka kudi domin
+						Khude Golpo ta saukaka hanyar da makaranta zasu saka kudi domin
 						sayayyar littafan da suke muradi, har hanyoyi uku.
 					</p>
 					<ul>
@@ -50,17 +50,17 @@ const faq = () => {
 					<p>
 						Dazarar asusun Earning (wallet) din marubuci takai 2,000 ko sama da
 						hakan, a lokacin yake da damar mallakar kudinsa (withdrawal
-						request). ArewaBooks zata aika masa kudin (payment) cikin lokaci
+						request). Khude Golpo zata aika masa kudin (payment) cikin lokaci
 						kankani.
 					</p>
-					<h6>YAYA TSARON (Security) LITTAFANMU A AREWABOOKS?</h6>
+					<h6>YAYA TSARON (Security) LITTAFANMU A Khude Golpo?</h6>
 					<p>
-						ArewaBooks tayi kokarin samar da tsaro (security) ga littafai... A
+						Khude Golpo tayi kokarin samar da tsaro (security) ga littafai... A
 						shafinmu (website) ko Manhaja (Application) babu damar wani ya danne
 						rubutun har yayi copy/share.
 					</p>
 					<p>
-						Sannan ArewaBooks tazo muku da wata tsarin kare littafanku daga
+						Sannan Khude Golpo tazo muku da wata tsarin kare littafanku daga
 						barayin yanargizo ta hanyar zabar {`"Platform Specific"`}... Shi
 						Platform Specific zaibawa marubuci damar zabar inda yakeson
 						littafinsa ya bayyana kamar:
@@ -84,32 +84,32 @@ const faq = () => {
 					</p>
 					<h6>
 						INADA MABIYA DA YAWA A WATTPAD/WHATSAPP/FACEBOOK, TAYAYA KENAN
-						ZANJANYOSU AREWABOOKS?
+						ZANJANYOSU Khude Golpo?
 					</h6>
 					<p>
 						Ehh, Akwai hanyoyi/dabaru da dama, Amma zamu bada guda daya zuwa
 						biyu.
 					</p>
 					<p>
-						Idan ka bude account a ArewaBooks shine kayi kokarin dora tsofaffin
+						Idan ka bude account a Khude Golpo shine kayi kokarin dora tsofaffin
 						littafanka aciki. Ko suna Wattpad ko basa Wattpad kafara wannan
 						kokarin.
 					</p>
 					<p>
 						Sannan sai kayi sanarwa a account dinka na Wattpad da sauran kafafar
 						sadarwa WhatsApp/Facebook/Telegram da sauransu, da yawa mabiyanka
-						zasu samu wannan sakon, har suyi following dinka a ArewaBooks.
+						zasu samu wannan sakon, har suyi following dinka a Khude Golpo.
 					</p>
 					<p>
 						Sannan zaka iya fara sabon littafi a Wattpad account naka, sai aciki
-						kayi sanarwan cigaban zaikasance a ArewaBooks. Haka zalika zaka iya
+						kayi sanarwan cigaban zaikasance a Khude Golpo. Haka zalika zaka iya
 						cire karshen tsofin littafanka dasuke wattpad abar iya farkon, sai
-						cikkaken yakasance a ArewaBooks account naka. Tabbas da yawan
-						mabiyanka zasu biyoka suyi following naka a ArewaBooks.
+						cikkaken yakasance a Khude Golpo account naka. Tabbas da yawan
+						mabiyanka zasu biyoka suyi following naka a Khude Golpo.
 					</p>
-					<h6>MEYASA AREWABOOKS?</h6>
+					<h6>MEYASA Khude Golpo?</h6>
 					<p>
-						Mun kirkiri wannan shafin/manhaja ArewaBooks ne duba da irin halin
+						Mun kirkiri wannan shafin/manhaja Khude Golpo ne duba da irin halin
 						da marubutan Arewa suke ciki ta kasuwancin littatafai ayanzu.
 						Matsalar ta shafi kowa daga masu bugawan da masu wallafawa a
 						yanargizo (online), Masu bugawan basu samun kasuwa kamar dacan
@@ -122,8 +122,8 @@ const faq = () => {
 						saboda takaicin canzawar yanayin.
 					</p>
 					<p>
-						Wadannan sune kadan daga cikin dalilin dayasa aka samar da
-						ArewaBooks.
+						Wadannan sune kadan daga cikin dalilin dayasa aka samar da Khude
+						Golpo.
 					</p>
 				</FaqContainer>
 			</PageCard>

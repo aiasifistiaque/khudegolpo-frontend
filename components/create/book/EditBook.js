@@ -194,7 +194,7 @@ const EditBook = ({ book }) => {
 						onChange={e => setRating(e)}
 					/>
 					<Caption>
-						Please read our Terms of Service for content we accept. ArewaBooks
+						Please read our Terms of Service for content we accept. Khude Golpo
 						reserves the right to remove any inappropriate content.
 					</Caption>
 					<br />

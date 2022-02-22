@@ -21,9 +21,9 @@ const data = [
 		items: [
 			{
 				title: 'Facebook',
-				to: 'https://www.facebook.com/arewabooks1',
+				to: 'https://www.facebook.com/Khude Golpo1',
 			},
-			{ title: 'Instagram', to: 'https://www.instagram.com/arewabooks1' },
+			{ title: 'Instagram', to: 'https://www.instagram.com/Khude Golpo1' },
 		],
 	},
 ];

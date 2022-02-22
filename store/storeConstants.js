@@ -1,5 +1,5 @@
 //
-export const tokenName = 'arewatokenprod';
+export const tokenName = 'khudeprod';
 
 export const ISSERVER = typeof window === 'undefined';
 

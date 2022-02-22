@@ -230,9 +230,9 @@
 
 .container .main .buy .unlock .price {
   padding: 0.5rem 1rem;
-  border: 1px solid #005bff;
+  border: 1px solid #483D8B;
   border-radius: 30px;
-  color: #005bff;
+  color: #483D8B;
   margin: 0;
   z-index: 2;
   background-color: white;
@@ -240,11 +240,11 @@
 
 .container .main .buy .unlock .open {
   padding: 0.5rem 2.5rem;
-  border: 1px solid #005bff;
+  border: 1px solid #483D8B;
   border-radius: 30px;
   color: white;
   margin: 0;
-  background-color: #005bff;
+  background-color: #483D8B;
   margin-left: -2rem;
   z-index: 0;
 }

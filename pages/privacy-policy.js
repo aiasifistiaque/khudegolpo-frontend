@@ -44,7 +44,7 @@ const PrivacyPolicy = () => {
 				</li>
 				<li>
 					Application means the software program provided by the Company
-					downloaded by You on any electronic device, named ArewaBooks
+					downloaded by You on any electronic device, named Khude Golpo
 				</li>
 				<li>
 					Company {`(`}referred to as either {`"`}the Company{`"`}, {`"`}We
@@ -87,7 +87,7 @@ const PrivacyPolicy = () => {
 				<li>
 					Website refers to Khudegolpo , accessible from{' '}
 					<Link href='/'>
-						<a>{`"arewabooks.com"`}</a>
+						<a>{`"Khude Golpo.com"`}</a>
 					</Link>
 				</li>
 				<li>
@@ -462,7 +462,7 @@ const PrivacyPolicy = () => {
 					If you have any questions about this Privacy Policy, You can contact
 					us:
 				</p>
-				<li>By email: arewabookspublishers{`@`}gmail.com</li>
+				<li>By email: Khude Golpopublishers{`@`}gmail.com</li>
 			</PageInnerLayout>
 		</Page>
 	);
