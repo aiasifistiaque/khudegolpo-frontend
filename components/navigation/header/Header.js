@@ -33,13 +33,17 @@ const Header = ({ barPressed, open, close, on, search, onClick }) => {
 					<img
 						src='/headerlogo.png'
 						style={{
-							width: 32,
-							height: 32,
+							width: 28,
+							height: 28,
 							objectFit: 'contain',
-							marginRight: 4,
+							marginRight: 12,
 						}}
 					/>
-					<h5>Khudegolpo</h5>
+					<h5
+						style={{
+							letterSpacing: -3,
+							fontWeight: '500',
+						}}>{`Khude   Golpo`}</h5>
 				</Row>
 			</div>
 			{loggedIn ? (
