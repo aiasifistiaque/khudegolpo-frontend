@@ -92,13 +92,13 @@ const Login = () => {
 					<br /> and
 					<a> Privacy Policy</a>
 				</Caption>
-				<div style={{ width: '100%' }}>
+				{/* <div style={{ width: '100%' }}>
 					<p style={{ margin: '1rem 0', textAlign: 'center' }}>Or,</p>
 				</div>
 				<Row wrap center>
 					<SocialButton>facebook</SocialButton>
 					<SocialButton>google</SocialButton>
-				</Row>
+				</Row> */}
 
 				<ToAuth href='register'>New User?</ToAuth>
 			</Container>
