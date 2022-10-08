@@ -8,7 +8,6 @@ const logoutAction = () => async dispatch => {
 		type: logOut,
 	});
 	localStorage.setItem(tokenName, null);
-
 	document.location.href = '/';
 };
 

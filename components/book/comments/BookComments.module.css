@@ -1,24 +1,15 @@
 .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   min-height: 30vh;
-  -webkit-box-shadow: 0 22px 40px rgba(0, 91, 255, 0.12);
-          box-shadow: 0 22px 40px rgba(0, 91, 255, 0.12);
+  box-shadow: 0 22px 40px rgba(72, 61, 139, 0.12);
   margin: 1rem auto;
   border-radius: 10px;
   background-color: white;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  align-items: center;
+  flex-direction: column;
   padding: 3rem 0;
   width: 100%;
 }
-
 @media (min-width: 1008px) {
   .container {
     width: 80%;
@@ -28,68 +19,42 @@
 .container {
   padding: 2rem 2rem;
 }
-
 @media (min-width: 1008px) {
   .container {
     padding: 2rem 4rem;
   }
 }
-
 .container .postComment {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex-direction: column;
+  flex: 1;
   width: 100%;
   padding: 1rem 0;
 }
-
 @media (min-width: 1008px) {
   .container .postComment {
     padding: 2rem 0;
   }
 }
-
 .container h5 {
   text-align: left;
-  -ms-flex-item-align: start;
-      -ms-grid-row-align: start;
-      align-self: start;
+  align-self: start;
   margin: 1rem 0;
 }
-
 .container .commentContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 1rem;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
   width: 100%;
 }
-
 .container .commentContainer .commentBox {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 0.5rem;
 }
-
 .container .commentContainer .commentBox .image {
   padding: 0.25rem 0;
 }
-
 .container .commentContainer .commentBox .image img {
   width: 30px;
   height: 30px;
@@ -97,20 +62,16 @@
   -o-object-fit: cover;
      object-fit: cover;
 }
-
 .container .commentContainer .commentBox .text {
   background-color: #f7f7f7;
   border-radius: 20px;
   padding: 0.5rem 1rem;
   border-top-left-radius: 4px;
 }
-
 .container .commentContainer .commentBox .text a {
   font-weight: 700;
 }
-
 .container .commentContainer .commentBox .text p {
   color: rgba(0, 0, 0, 0.7);
   margin-top: 0.25rem;
-}
-/*# sourceMappingURL=BookComments.module.css.map */
+}/*# sourceMappingURL=BookComments.module.css.map */

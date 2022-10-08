@@ -1,12 +1,1 @@
-{
-    "version": 3,
-    "mappings": "AAEA,AAAA,SAAS,CAAC;EACT,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,MAAM;EACnB,eAAe,EAAE,MAAM;EACvB,UAAU,EAAE,KAAK;EACjB,cAAc,EAAE,MAAM;EACtB,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,SAAS;EAQjB,aAAa,EAAE,IAAI;CACnB;;AEQA,MAAM,EAAE,SAAS,EAAE,KAAK;EFxBzB,AAAA,SAAS,CAAC;IAUR,MAAM,EAAE,QAAQ;GAMjB;;;AEcA,MAAM,EAAE,SAAS,EAAE,MAAM;EF9B1B,AAAA,SAAS,CAAC;IAaR,MAAM,EAAE,QAAQ;GAGjB",
-    "sources": [
-        "Register.module.scss",
-        "../../../styles/_imports.scss",
-        "../../../styles/utilities/_mixin.scss",
-        "../../../styles/utilities/_partials.scss"
-    ],
-    "names": [],
-    "file": "Register.module.css"
-}
+{"version":3,"sources":["Register.module.scss","Register.module.css","../../../styles/utilities/_mixin.scss"],"names":[],"mappings":"AAEA;EACC,aAAA;EACA,mBAAA;EACA,uBAAA;EACA,iBAAA;EACA,sBAAA;EACA,WAAA;EACA,iBAAA;EAQA,mBAAA;ACRD;ACiBC;EFxBD;IAUE,gBAAA;ECCA;AACF;ACkBC;EF9BD;IAaE,gBAAA;ECGA;AACF","file":"Register.module.css"}

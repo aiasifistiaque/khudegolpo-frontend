@@ -1,50 +1,35 @@
 .login {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   min-height: 100vh;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   width: 100%;
   margin: 0 1.5rem;
   width: 100%;
 }
-
 .login .forgot {
   color: dodgerblue;
   font-size: 12px;
   font-weight: 500;
   margin: -16px 0 4px 0;
 }
-
 @media (min-width: 640px) {
   .login .forgot {
-    -ms-flex-item-align: start;
-        align-self: flex-start;
+    align-self: flex-start;
   }
 }
-
 @media (min-width: 640px) {
   .login {
     margin: 0 auto;
     max-width: 420px;
   }
 }
-
 @media (min-width: 1008px) {
   .login {
     margin: 0 auto;
   }
 }
-
 @media (min-width: 1200px) {
   .login {
     margin: 0 auto;
@@ -52,29 +37,20 @@
 }
 
 .newUser {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin: 1.5rem 0;
   font-weight: 400;
   width: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 @media (min-width: 640px) {
   .newUser {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    justify-content: flex-start;
   }
 }
-
 .newUser a {
   margin-left: 0.3rem;
   color: #ff3152;
   text-transform: capitalize;
   line-height: 24px;
-}
-/*# sourceMappingURL=Login.module.css.map */
+}/*# sourceMappingURL=Login.module.css.map */

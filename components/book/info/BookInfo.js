@@ -17,6 +17,7 @@ import toK from '../../../functions/toK';
 import IconButton from '../../utilities/button/IconButton';
 import Row from '../../utilities/container/Row';
 import BookShare from './BookShare';
+import ChangePhoto from '../../change-photo/ChangePhoto';
 
 const BookInfo = ({ seo }) => {
 	const dispatch = useDispatch();
@@ -28,16 +29,8 @@ const BookInfo = ({ seo }) => {
 	const { alert } = useSelector(state => state.alert);
 	const [alertState, setAlertState] = useState('');
 
-	const {
-		_id,
-		title,
-		image,
-		author,
-		chapters,
-		likes,
-		description,
-		views,
-	} = book;
+	const { _id, title, image, author, chapters, likes, description, views } =
+		book;
 
 	const { self } = useSelf();
 
@@ -56,6 +49,7 @@ const BookInfo = ({ seo }) => {
 			<>
 				<div className={styles.info}>
 					<div className={styles.cover}>
+						<ChangePhoto id={_id && _id} book={book && book} />
 						<img src={image} alt={title} />
 						{!self ? (
 							<AddToLibraryButton id={_id} />

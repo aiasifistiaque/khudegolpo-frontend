@@ -1,28 +1,18 @@
 .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
+  flex-direction: column;
+  align-self: flex-start;
   padding: 2rem;
   margin: 0.5rem 0 1rem 0;
   background-color: white;
   width: 100%;
   min-width: 250px;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
   text-align: left;
 }
-
 @media (min-width: 1008px) {
   .container {
-    -webkit-box-shadow: 0 22px 40px rgba(0, 91, 255, 0.12);
-            box-shadow: 0 22px 40px rgba(0, 91, 255, 0.12);
+    box-shadow: 0 22px 40px rgba(72, 61, 139, 0.12);
     margin: 2rem 4rem 2rem 0.5rem;
     border-radius: 10px;
     padding: 2rem 4rem;
@@ -32,10 +22,8 @@
 .container .box {
   margin: 1rem 0;
 }
-
 @media (min-width: 1008px) {
   .container .box {
     width: 70%;
   }
-}
-/*# sourceMappingURL=Manage.module.css.map */
+}/*# sourceMappingURL=Manage.module.css.map */

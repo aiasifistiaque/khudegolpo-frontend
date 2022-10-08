@@ -1,21 +1,13 @@
 .caption {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
-
 @media (min-width: 640px) {
   .caption {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    justify-content: flex-start;
   }
 }
-
 .caption p {
   font-size: 0.8rem;
   font-weight: 500;
@@ -24,30 +16,24 @@
   line-height: 1.2rem;
   text-align: center;
 }
-
 @media (min-width: 640px) {
   .caption p {
     text-align: left;
   }
 }
-
 .caption a {
-  color: #483D8B;
+  color: #483d8b;
   cursor: pointer;
 }
-
 .caption a:hover {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
 }
 
 .subHeading {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
 }
-
 .subHeading p {
   font-size: 0.8rem;
   font-weight: 600;
@@ -58,28 +44,20 @@
 }
 
 .blueText {
-  color: #483D8B;
+  color: #483d8b;
   font-size: 0.9rem;
 }
 
 .textCaption {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
-  -webkit-box-pack: left;
-      -ms-flex-pack: left;
-          justify-content: left;
+  justify-content: left;
 }
-
 @media (min-width: 640px) {
   .textCaption {
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    justify-content: flex-start;
   }
 }
-
 .textCaption p {
   font-size: 12px;
   font-weight: 500;
@@ -88,37 +66,25 @@
   line-height: 1.2rem;
   text-align: center;
 }
-
 @media (min-width: 640px) {
   .textCaption p {
     text-align: left;
   }
 }
-
 .textCaption a {
-  color: #483D8B;
+  color: #483d8b;
   cursor: pointer;
 }
-
 .textCaption a:hover {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
 }
 
 .errorText {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
   padding: 1rem 2rem;
   background-color: rgba(255, 49, 82, 0.1);
   border-radius: 4px;
@@ -126,7 +92,6 @@
   width: 100%;
   margin: 1rem 0;
 }
-
 .errorText p {
   font-size: 0.9rem;
   font-weight: 500;
@@ -135,7 +100,6 @@
   line-height: 1.2rem;
   text-align: center;
 }
-
 @media (min-width: 640px) {
   .errorText p {
     text-align: left;
@@ -143,19 +107,10 @@
 }
 
 .successText {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
   padding: 1rem 2rem;
   background-color: rgba(0, 128, 128, 0.1);
   border-radius: 4px;
@@ -163,7 +118,6 @@
   width: 100%;
   margin: 1rem 0;
 }
-
 .successText p {
   font-size: 0.9rem;
   font-weight: 500;
@@ -172,7 +126,6 @@
   line-height: 1.2rem;
   text-align: center;
 }
-
 @media (min-width: 640px) {
   .successText p {
     text-align: left;
@@ -180,8 +133,6 @@
 }
 
 .pageTitle {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
   padding: 1rem 0;
@@ -191,9 +142,7 @@
 .date {
   color: gray;
 }
-
 .date p {
   font-size: 12px;
   line-height: 1.25rem;
-}
-/*# sourceMappingURL=Text.module.css.map */
+}/*# sourceMappingURL=Text.module.css.map */

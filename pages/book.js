@@ -17,6 +17,7 @@ import Row from '../components/utilities/container/Row';
 import { api, url } from '../constants';
 import Head from 'next/head';
 import * as lib from '../lib/functions';
+import ChangePhoto from '../components/change-photo/ChangePhoto';
 
 const BooK = ({ data }) => {
 	const router = useRouter();

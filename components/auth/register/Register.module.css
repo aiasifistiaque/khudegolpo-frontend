@@ -1,32 +1,20 @@
 .register {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   min-height: 100vh;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   width: 100%;
   margin: 1rem 2rem;
   margin-bottom: 4rem;
 }
-
 @media (min-width: 640px) {
   .register {
     margin: 2rem 25%;
   }
 }
-
 @media (min-width: 1008px) {
   .register {
     margin: 2rem 35%;
   }
-}
-/*# sourceMappingURL=Register.module.css.map */
+}/*# sourceMappingURL=Register.module.css.map */

@@ -1,6 +1,4 @@
-.button, .buttonDanger, .grayButton, .buttonOutlined, .danger, .longButtonDanger, .longButton, .buttonOutlinedLongDanger, .small, .buttonDisabled, .loadingButton, .textButton, .textButtonBg {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
+.textButtonBg, .textButton, .loadingButton, .buttonDisabled, .small, .buttonOutlinedLongDanger, .longButton, .longButtonDanger, .danger, .buttonOutlined, .grayButton, .buttonDanger, .button {
   display: inline-flex;
   cursor: pointer;
   -moz-user-select: none;
@@ -8,64 +6,50 @@
   -ms-user-select: none;
   user-select: none;
   margin: 0.25rem;
-  -webkit-transition: 0.2s;
   transition: 0.2s;
 }
-
-.button p, .buttonDanger p, .grayButton p, .buttonOutlined p, .danger p, .longButtonDanger p, .longButton p, .buttonOutlinedLongDanger p, .small p, .buttonDisabled p, .loadingButton p, .textButton p, .textButtonBg p {
+.textButtonBg p, .textButton p, .loadingButton p, .buttonDisabled p, .small p, .buttonOutlinedLongDanger p, .longButton p, .longButtonDanger p, .danger p, .buttonOutlined p, .grayButton p, .buttonDanger p, .button p {
   font-size: 14px;
   letter-spacing: 0.5px;
   font-weight: 500;
 }
 
-.button, .buttonDanger, .grayButton, .buttonOutlined, .danger, .longButtonDanger, .longButton, .buttonOutlinedLongDanger, .small {
-  background-color: #483D8B;
+.small, .buttonOutlinedLongDanger, .longButton, .longButtonDanger, .danger, .buttonOutlined, .grayButton, .buttonDanger, .button {
+  background-color: #483d8b;
   height: 42px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   color: white;
   padding: 0 32px;
   border-radius: 30px;
   width: 100%;
-  border: 1px solid #483D8B;
+  border: 1px solid #483d8b;
 }
-
 @media (min-width: 640px) {
-  .button, .buttonDanger, .grayButton, .buttonOutlined, .danger, .longButtonDanger, .longButton, .buttonOutlinedLongDanger, .small {
+  .small, .buttonOutlinedLongDanger, .longButton, .longButtonDanger, .danger, .buttonOutlined, .grayButton, .buttonDanger, .button {
     width: 180px;
   }
 }
-
 @media (min-width: 1008px) {
-  .button:hover, .buttonDanger:hover, .grayButton:hover, .buttonOutlined:hover, .danger:hover, .longButtonDanger:hover, .longButton:hover, .buttonOutlinedLongDanger:hover, .small:hover {
-    background-color: #0049cc;
+  .small:hover, .buttonOutlinedLongDanger:hover, .longButton:hover, .longButtonDanger:hover, .danger:hover, .buttonOutlined:hover, .grayButton:hover, .buttonDanger:hover, .button:hover {
+    background-color: #362d68;
   }
 }
-
-.button:active, .buttonDanger:active, .grayButton:active, .buttonOutlined:active, .danger:active, .longButtonDanger:active, .longButton:active, .buttonOutlinedLongDanger:active, .small:active {
-  background-color: #337cff;
+.small:active, .buttonOutlinedLongDanger:active, .longButton:active, .longButtonDanger:active, .danger:active, .buttonOutlined:active, .grayButton:active, .buttonDanger:active, .button:active {
+  background-color: #5a4dae;
 }
 
 .buttonDisabled {
   background-color: #e6e6e6;
   height: 42px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   color: #4d4d4d;
   padding: 0 32px;
   border-radius: 30px;
   width: 100%;
   cursor: not-allowed;
 }
-
 @media (min-width: 640px) {
   .buttonDisabled {
     width: 180px;
@@ -76,50 +60,41 @@
   background-color: #ff3152;
   border: 1px solid #ff3152;
 }
-
 @media (min-width: 1008px) {
   .buttonDanger:hover {
     background-color: #fd0029;
   }
 }
-
 .buttonDanger:active {
   background-color: #ff647d;
 }
 
 .grayButton {
   background-color: #f1f1f1;
-  color: #483D8B;
+  color: #483d8b;
   border: none;
 }
-
 @media (min-width: 1008px) {
   .grayButton:hover {
     background-color: #d8d8d8;
   }
 }
-
 .grayButton:active {
   background-color: #a5a5a5;
 }
 
 .loadingButton {
   cursor: no-drop;
-  background-color: #003799;
+  background-color: #231e44;
   height: 42px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   color: white;
   padding: 0 32px;
   border-radius: 30px;
   width: 100%;
-  border: 1px solid #003799;
+  border: 1px solid #231e44;
 }
-
 @media (min-width: 640px) {
   .loadingButton {
     width: 180px;
@@ -128,36 +103,32 @@
 
 .buttonOutlined {
   background-color: transparent;
-  color: #483D8B;
+  color: #483d8b;
 }
-
 @media (min-width: 1008px) {
   .buttonOutlined:hover {
-    background-color: #483D8B;
+    background-color: #483d8b;
     color: white;
   }
 }
-
 .buttonOutlined:active {
-  background-color: #337cff;
+  background-color: #5a4dae;
 }
 
-.danger, .longButtonDanger {
+.longButtonDanger, .danger {
   background-color: #ff3152;
   border: 1px solid #ff3152;
 }
-
 @media (min-width: 1008px) {
-  .danger:hover, .longButtonDanger:hover {
+  .longButtonDanger:hover, .danger:hover {
     background-color: #ca0020;
   }
 }
-
-.danger:active, .longButtonDanger:active {
+.longButtonDanger:active, .danger:active {
   background-color: #ff647d;
 }
 
-.danger, .longButton, .longButtonDanger, .buttonOutlinedLongDanger {
+.buttonOutlinedLongDanger, .longButtonDanger, .longButton, .danger {
   width: 225px;
 }
 
@@ -172,31 +143,25 @@
   border-radius: 4px;
   margin: 2px;
 }
-
 .textButtonBg p {
   font-size: 14px;
 }
-
 @media (min-width: 1008px) {
   .textButtonBg:hover {
     background-color: rgba(0, 0, 0, 0.125);
   }
 }
-
 .textButtonBg:active {
   background-color: rgba(0, 0, 0, 0.025);
 }
 
 .tags {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
   height: 26px;
   border: 1px solid #ff3152;
   padding: 0 16px;
   border-radius: 30px;
 }
-
 .tags p {
   font-size: 12px;
   letter-spacing: 1px;
@@ -209,14 +174,12 @@
   color: crimson;
   border: 1px solid crimson;
 }
-
 @media (min-width: 1008px) {
   .buttonOutlinedLongDanger:hover {
     background-color: crimson;
     color: white;
   }
 }
-
 .buttonOutlinedLongDanger:active {
   background-color: #ed365b;
 }
@@ -225,10 +188,8 @@
   height: 32px;
   max-width: 100px;
 }
-
 .small p {
   letter-spacing: 0px;
   font-size: 14px;
   font-weight: 500;
-}
-/*# sourceMappingURL=Button.module.css.map */
+}/*# sourceMappingURL=Button.module.css.map */
