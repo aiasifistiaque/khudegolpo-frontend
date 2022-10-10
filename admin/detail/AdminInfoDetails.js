@@ -37,6 +37,13 @@ const AdminInfoDetails = ({ title }) => {
 	const [coverThreeRedirect, setCoverThreeRedirect] = useState();
 	const [edit, setEdit] = useState(false);
 
+	const [bookOne, setBookOne] = useState();
+	const [bookTwo, setBookTwo] = useState();
+	const [bookThree, setBookThree] = useState();
+	const [bookFour, setBookFour] = useState();
+	const [bookFive, setBookFive] = useState();
+	const [bookSix, setBookSix] = useState();
+
 	const reload = () => {
 		if (initialize) {
 			setCoverOne(doc.doc.coverOne);
@@ -67,6 +74,12 @@ const AdminInfoDetails = ({ title }) => {
 					coverOneRedirect,
 					coverTwoRedirect,
 					coverThreeRedirect,
+					bookOne,
+					bookTwo,
+					bookThree,
+					bookFour,
+					bookFive,
+					bookSix,
 				},
 				config
 			);
@@ -77,6 +90,13 @@ const AdminInfoDetails = ({ title }) => {
 				setCoverOneRedirect(data.doc.coverOneRedirect);
 				setCoverTwoRedirect(data.doc.coverTwoRedirect);
 				setCoverThreeRedirect(data.doc.coverThreeRedirect);
+				setBookOne(data.doc.bookOne);
+				setBookTwo(data.doc.bookTwo);
+				setBookThree(data.doc.bookThree);
+				setBookFour(data.doc.bookFour);
+				setBookFive(data.doc.bookFive);
+				setBookSix(data.doc.bookSix);
+
 				console.log('Request completed');
 				setEdit(false);
 			}
@@ -95,6 +115,12 @@ const AdminInfoDetails = ({ title }) => {
 			setCoverOneRedirect(doc.doc.coverOneRedirect);
 			setCoverTwoRedirect(doc.doc.coverTwoRedirect);
 			setCoverThreeRedirect(doc.doc.coverThreeRedirect);
+			setBookOne(doc.doc.bookOne);
+			setBookTwo(doc.doc.bookTwo);
+			setBookThree(doc.doc.bookThree);
+			setBookFour(doc.doc.bookFour);
+			setBookFive(doc.doc.bookFive);
+			setBookSix(doc.doc.bookSix);
 		}
 	}, [initialize]);
 
@@ -130,15 +156,35 @@ const AdminInfoDetails = ({ title }) => {
 					setText={e => setCoverThreeRedirect(e)}
 				/>
 			</ConverContainer>
+			<ConverContainer
+				title='Khude Pick'
+				edit={edit}
+				onClick={() => setEdit(true)}
+				cancel={reload}
+				confirm={update}>
+				<Book edit={edit} book={bookOne} setText={e => setBookOne(e)} />
+				<Book edit={edit} book={bookTwo} setText={e => setBookTwo(e)} />
+				<Book edit={edit} book={bookThree} setText={e => setBookThree(e)} />
+				<Book edit={edit} book={bookFour} setText={e => setBookFour(e)} />
+				<Book edit={edit} book={bookFive} setText={e => setBookFive(e)} />
+				<Book edit={edit} book={bookSix} setText={e => setBookSix(e)} />
+			</ConverContainer>
 		</DetailLayout>
 	);
 };
 
-const ConverContainer = ({ children, onClick, edit, cancel, confirm }) => {
+const ConverContainer = ({
+	children,
+	onClick,
+	edit,
+	cancel,
+	confirm,
+	title,
+}) => {
 	return (
 		<div className={styles.infoContainer}>
 			<Row>
-				<h5>Covers</h5>
+				<h5>{title ? title : 'Covers'}</h5>
 				{edit ? (
 					<Row>
 						<TextButton bg onClick={confirm} color='teal'>
@@ -204,6 +250,27 @@ const Cover = ({ img, book, edit, setImage, setText }) => {
 				/>
 			) : (
 				<p>Redirect to book: {book}</p>
+			)}
+		</div>
+	);
+};
+
+const Book = ({ img, book, edit, setImage, setText }) => {
+	return (
+		<div className={styles.book}>
+			<img src={book?.image && book.image} alt='book' />
+			{/* <p>{book?.title && book.title}</p> */}
+
+			<br />
+
+			{edit ? (
+				<TextInput
+					label='Enter book id'
+					value={book?._id && book._id}
+					onChange={e => setText(e)}
+				/>
+			) : (
+				<p>{book?.title && book.title}</p>
 			)}
 		</div>
 	);

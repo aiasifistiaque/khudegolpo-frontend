@@ -62,13 +62,28 @@ const Search = ({ active, off }) => {
 			) : (
 				<SearchProductContainer>
 					{searchResult &&
-						searchResult.map((item, i) => (
+						searchResult.books &&
+						searchResult.books.map &&
+						searchResult.books.map((item, i) => (
 							<SearchProducts
 								item={item}
 								key={i}
 								onClick={() => {
 									off();
 									router.push(`/book?id=${item._id}`);
+								}}
+							/>
+						))}
+					{searchResult &&
+						searchResult.users &&
+						searchResult.users.map &&
+						searchResult.users.map((item, i) => (
+							<SearchUsers
+								item={item}
+								key={i}
+								onClick={() => {
+									off();
+									router.push(`/u/${item?.username && item.username}`);
 								}}
 							/>
 						))}
@@ -112,6 +127,26 @@ const SearchProducts = ({ item, onClick }) => {
 			/>
 			<div className={styles.cardText}>
 				<h5>{item.title}</h5>
+			</div>
+		</div>
+	);
+};
+
+const SearchUsers = ({ item, onClick }) => {
+	return (
+		<div className={styles.spCard} onClick={onClick}>
+			<Image
+				unoptimized={true}
+				src={item?.image && item.image}
+				alt={item?.username && item.username}
+				height={50}
+				width={50}
+				objectFit='cover'
+				style={{ borderRadius: '99px' }}
+			/>
+			<div className={styles.cardText}>
+				<h6>{item?.name && item.name}</h6>
+				<p>{item?.username && item.username}</p>
 			</div>
 		</div>
 	);

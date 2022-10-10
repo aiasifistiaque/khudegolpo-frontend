@@ -11,7 +11,7 @@ const searchBooksAction = string => async dispatch => {
 		dispatch({ type: searchBooksRequest });
 		const { data } = await axios.get(`${api.book}?search=${string}`);
 
-		dispatch({ type: searchBooksSuccess, payload: data.books });
+		dispatch({ type: searchBooksSuccess, payload: data });
 	} catch (error) {
 		dispatch({
 			type: searchBooksFail,

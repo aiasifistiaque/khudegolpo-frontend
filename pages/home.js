@@ -8,6 +8,7 @@ import HomeCoverGap from '../components/home/HomeCoverGap';
 import useAuth from '../hooks/useAuth';
 import { useRouter } from 'next/router';
 import LoadingPage from '../components/utilities/page/LoadingPage';
+import KhudePick from '../components/home/KhudePick';
 
 const PageHome = () => {
 	const router = useRouter();
@@ -24,6 +25,7 @@ const PageHome = () => {
 			<HomeCover />
 			<Container>
 				<HomeCoverGap />
+				<KhudePick />
 				<RecentBookList
 					heading='Popular Books'
 					option={'sort=popular&type=home'}
